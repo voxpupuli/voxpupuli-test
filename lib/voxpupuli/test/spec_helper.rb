@@ -8,6 +8,8 @@
 # The environment variable `PUPPET_VERSION` is available in our travis environment, but we cannot rely on it
 # if somebody runs the tests locally. For that case we should fallback the the puppet gem version.
 def suggest_facter_version
+  return ENV['FACTERDB_FACTS_VERSION'] if ENV['FACTERDB_FACTS_VERSION']
+
   require 'bundler'
   puppet_version = ENV['PUPPET_VERSION'] ? ENV['PUPPET_VERSION'] : Gem.loaded_specs['puppet'].version.to_s
   Gem::Dependency.new('', puppet_version).match?('', '5') ? '3.11.0' : '3.14.0'
@@ -27,7 +29,7 @@ require 'rspec-puppet-facts'
 include RspecPuppetFacts
 
 RSpec.configure do |config|
-  config.default_facter_version = ENV['FACTERDB_FACTS_VERSION'] || suggest_facter_version
+  config.default_facter_version = suggest_facter_version
 
   # Coverage generation
   config.after(:suite) do
