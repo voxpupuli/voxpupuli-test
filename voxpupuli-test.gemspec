@@ -4,8 +4,8 @@ Gem::Specification.new do |s|
   s.name        = 'voxpupuli-test'
   s.version     = '0.1.0'
   s.authors     = ['Vox Pupuli']
-  s.email       = ['support@voxpupuli.org']
-  s.homepage    = 'http://github.com/voxpupuli/voxpupuli-test-gem'
+  s.email       = ['pmc@voxpupuli.org']
+  s.homepage    = 'http://github.com/voxpupuli/voxpupuli-test'
   s.summary     = 'Helpers for testing Vox Pupuli modules'
   s.description = 'A package that depends on all the gems Vox Pupuli modules need and methods to simplify spec helpers'
   s.licenses    = 'Apache-2.0'
