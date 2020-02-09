@@ -2,3 +2,4 @@ Gemfile.lock
 .vendor/
 vendor/
 .bundle/
+voxpupuli-test-*.gem
