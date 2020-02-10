@@ -26,8 +26,6 @@ end
 
 require 'voxpupuli/test/facts'
 require 'puppetlabs_spec_helper/module_spec_helper'
-require 'rspec-puppet-facts'
-include RspecPuppetFacts
 
 # Generating facts is slow - this memoizes the facts between multiple classes.
 # Marshalling is used to get unique instances which helps when tests overrides

@@ -1,3 +1,6 @@
+require 'rspec-puppet-facts'
+include RspecPuppetFacts
+
 # Override facts
 #
 # This doesn't use deep_merge because that's highly unpredictable. It can merge
@@ -29,6 +32,66 @@ def apply_overrides!(facts, overrides, enforce_strings)
       apply_overrides!(facts[key], value, true)
     else
       facts[key] = value
+    end
+  end
+end
+
+# Add mocked facts based on the metadata present in the module
+#
+# This means that for some module there are hardcoded mocks, such as stdlib.
+# When stdlib is present in metadata.json, facts like service_provider are
+# mocked and return the correct value according to the OS facts.
+def add_mocked_facts!
+  add_facts_for_metadata(RspecPuppetFacts.metadata)
+end
+
+def add_facts_for_metadata(metadata)
+  return unless metadata && metadata['dependencies']
+
+  metadata['dependencies'].each do |dependency|
+    case normalize_module_name(dependency['name'])
+    when 'camptocamp/systemd'
+      add_custom_fact :systemd, ->(os, facts) { facts[:service_provider] == 'systemd' }
+    when 'puppetlabs/stdlib'
+      add_stdlib_facts
+    end
+  end
+end
+
+def normalize_module_name(name)
+  return unless name
+  name.sub('-', '/')
+end
+
+def add_stdlib_facts
+  add_custom_fact :puppet_environmentpath, '/etc/puppetlabs/code/environments'
+  add_custom_fact :puppet_vardir, '/opt/puppetlabs/puppet/cache'
+  add_custom_fact :root_home, '/root'
+
+  # Rough conversion of grepping in the puppet source:
+  # grep defaultfor lib/puppet/provider/service/*.rb
+  add_custom_fact :service_provider, ->(os, facts) do
+    case facts[:osfamily].downcase
+    when 'archlinux'
+      'systemd'
+    when 'darwin'
+      'launchd'
+    when 'debian'
+      'systemd'
+    when 'freebsd'
+      'freebsd'
+    when 'gentoo'
+      'openrc'
+    when 'openbsd'
+      'openbsd'
+    when 'redhat'
+      facts[:operatingsystemrelease].to_i >= 7 ? 'systemd' : 'redhat'
+    when 'suse'
+      facts[:operatingsystemmajrelease].to_i >= 12 ? 'systemd' : 'redhat'
+    when 'windows'
+      'windows'
+    else
+      'init'
     end
   end
 end
