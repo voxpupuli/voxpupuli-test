@@ -2,9 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.2.0](https://github.com/voxpupuli/voxpupuli-test/tree/0.2.0) (2020-02-11)
+## [1.0.0](https://github.com/voxpupuli/voxpupuli-test/tree/1.0.0) (2020-04-03)
 
-[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v0.1.0...0.2.0)
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v0.2.0...1.0.0)
+
+**Closed issues:**
+
+- This project is now stable - release it as v1.0.0 [\#7](https://github.com/voxpupuli/voxpupuli-test/issues/7)
+
+## [v0.2.0](https://github.com/voxpupuli/voxpupuli-test/tree/v0.2.0) (2020-02-11)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v0.1.0...v0.2.0)
 
 **Fixed bugs:**
 
@@ -12,6 +20,7 @@ All notable changes to this project will be documented in this file.
 
 **Merged pull requests:**
 
+- release 0.2.0 [\#6](https://github.com/voxpupuli/voxpupuli-test/pull/6) ([bastelfreak](https://github.com/bastelfreak))
 - Make suggest\_facter\_version more robust and complete [\#4](https://github.com/voxpupuli/voxpupuli-test/pull/4) ([ekohl](https://github.com/ekohl))
 - Determine correct facter version based on puppet [\#3](https://github.com/voxpupuli/voxpupuli-test/pull/3) ([bastelfreak](https://github.com/bastelfreak))
 - Add Apache-2 license file / gemspec: fix file pattern / gitignore: ignore gem artifacts [\#2](https://github.com/voxpupuli/voxpupuli-test/pull/2) ([bastelfreak](https://github.com/bastelfreak))
