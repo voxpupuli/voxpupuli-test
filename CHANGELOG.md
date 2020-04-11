@@ -2,9 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.0.0](https://github.com/voxpupuli/voxpupuli-test/tree/1.0.0) (2020-04-03)
+## [v1.1.0](https://github.com/voxpupuli/voxpupuli-test/tree/v1.1.0) (2020-04-11)
 
-[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v0.2.0...1.0.0)
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v1.0.0...v1.1.0)
+
+**Implemented enhancements:**
+
+- Memoize rspec-puppet-facts [\#10](https://github.com/voxpupuli/voxpupuli-test/pull/10) ([ekohl](https://github.com/ekohl))
+- add puppet-lint-resource\_reference\_syntax as dependency [\#9](https://github.com/voxpupuli/voxpupuli-test/pull/9) ([bastelfreak](https://github.com/bastelfreak))
+
+## [v1.0.0](https://github.com/voxpupuli/voxpupuli-test/tree/v1.0.0) (2020-04-03)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v0.2.0...v1.0.0)
 
 **Closed issues:**
 
