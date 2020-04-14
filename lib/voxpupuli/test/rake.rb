@@ -5,6 +5,8 @@ PuppetLint.configuration.log_format = '%{path}:%{line}:%{check}:%{KIND}:%{messag
 desc 'Run tests'
 task test: [:release_checks]
 
+task default: [:release_checks]
+
 namespace :check do
   desc 'Check for trailing whitespace'
   task :trailing_whitespace do
