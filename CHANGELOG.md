@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.2.0](https://github.com/voxpupuli/voxpupuli-test/tree/v1.2.0) (2020-04-15)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v1.1.0...v1.2.0)
+
+**Merged pull requests:**
+
+- Define a default task [\#12](https://github.com/voxpupuli/voxpupuli-test/pull/12) ([ekohl](https://github.com/ekohl))
+
 ## [v1.1.0](https://github.com/voxpupuli/voxpupuli-test/tree/v1.1.0) (2020-04-11)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v1.0.0...v1.1.0)
