@@ -2,7 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
-## [v1.2.0](https://github.com/voxpupuli/voxpupuli-test/tree/v1.2.0) (2020-04-15)
+## [v1.3.0](https://github.com/voxpupuli/voxpupuli-test/tree/v1.3.0) (2020-04-21)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v1.2.0...v1.3.0)
+
+**Implemented enhancements:**
+
+- Add override\_facts helper method [\#15](https://github.com/voxpupuli/voxpupuli-test/pull/15) ([ekohl](https://github.com/ekohl))
+
+## [v1.2.0](https://github.com/voxpupuli/voxpupuli-test/tree/v1.2.0) (2020-04-14)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v1.1.0...v1.2.0)
 
@@ -37,7 +45,6 @@ All notable changes to this project will be documented in this file.
 
 **Merged pull requests:**
 
-- release 0.2.0 [\#6](https://github.com/voxpupuli/voxpupuli-test/pull/6) ([bastelfreak](https://github.com/bastelfreak))
 - Make suggest\_facter\_version more robust and complete [\#4](https://github.com/voxpupuli/voxpupuli-test/pull/4) ([ekohl](https://github.com/ekohl))
 - Determine correct facter version based on puppet [\#3](https://github.com/voxpupuli/voxpupuli-test/pull/3) ([bastelfreak](https://github.com/bastelfreak))
 - Add Apache-2 license file / gemspec: fix file pattern / gitignore: ignore gem artifacts [\#2](https://github.com/voxpupuli/voxpupuli-test/pull/2) ([bastelfreak](https://github.com/bastelfreak))
