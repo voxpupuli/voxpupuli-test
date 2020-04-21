@@ -37,4 +37,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'puppet-lint-variable_contains_upcase'
   s.add_runtime_dependency 'puppet-lint-version_comparison-check'
   s.add_runtime_dependency 'puppet-lint-resource_reference_syntax'
+
+  # development
+  s.add_development_dependency 'rspec'
 end
