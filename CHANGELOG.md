@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.4.0](https://github.com/voxpupuli/voxpupuli-test/tree/v1.4.0) (2020-04-24)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v1.3.0...v1.4.0)
+
+**Implemented enhancements:**
+
+- Require at least facterdb 1.3.0 for Debian 10 [\#17](https://github.com/voxpupuli/voxpupuli-test/pull/17) ([ekohl](https://github.com/ekohl))
+
 ## [v1.3.0](https://github.com/voxpupuli/voxpupuli-test/tree/v1.3.0) (2020-04-21)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v1.2.0...v1.3.0)
