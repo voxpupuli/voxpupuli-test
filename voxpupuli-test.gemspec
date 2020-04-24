@@ -15,6 +15,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'rake'
 
   # Testing
+  s.add_runtime_dependency 'facterdb', '>= 1.3.0'
   s.add_runtime_dependency 'metadata-json-lint'
   s.add_runtime_dependency 'parallel_tests'
   s.add_runtime_dependency 'puppetlabs_spec_helper', '>= 2.14.0'
