@@ -40,6 +40,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'puppet-lint-resource_reference_syntax'
   s.add_runtime_dependency 'puppet-lint-manifest_whitespace-check'
   s.add_runtime_dependency 'puppet-lint-file_ensure-check'
+  s.add_runtime_dependency 'puppet-lint-strict_indent-check'
 
   # development
   s.add_development_dependency 'rspec'
