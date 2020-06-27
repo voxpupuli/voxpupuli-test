@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.5.0](https://github.com/voxpupuli/voxpupuli-test/tree/v1.5.0) (2020-06-27)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v1.4.0...v1.5.0)
+
+**Merged pull requests:**
+
+- depend on facterdb 1.4.0 for Ubuntu 20.04 facts [\#20](https://github.com/voxpupuli/voxpupuli-test/pull/20) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [v1.4.0](https://github.com/voxpupuli/voxpupuli-test/tree/v1.4.0) (2020-04-24)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v1.3.0...v1.4.0)
