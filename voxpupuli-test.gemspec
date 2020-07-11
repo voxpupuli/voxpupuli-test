@@ -24,7 +24,7 @@ Gem::Specification.new do |s|
 
   # Rubocop
   s.add_runtime_dependency 'rubocop', '~> 0.49.1'
-  s.add_runtime_dependency 'rubocop-rspec', '1.15.0'
+  s.add_runtime_dependency 'rubocop-rspec', '~> 1.16.0'
 
   # Linting
   s.add_runtime_dependency 'puppet-lint-absolute_classname-check', '>= 2.0.0'
