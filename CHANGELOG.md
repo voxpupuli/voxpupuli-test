@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v2.0.0](https://github.com/voxpupuli/voxpupuli-test/tree/v2.0.0) (2020-07-21)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v1.5.0...v2.0.0)
+
+**Breaking changes:**
+
+- Add puppet-lint-file\_ensure-check [\#24](https://github.com/voxpupuli/voxpupuli-test/pull/24) ([bastelfreak](https://github.com/bastelfreak))
+- add puppet-lint-manifest\_whitespace-check [\#22](https://github.com/voxpupuli/voxpupuli-test/pull/22) ([bastelfreak](https://github.com/bastelfreak))
+- Add puppet-lint-strict\_indent-check [\#21](https://github.com/voxpupuli/voxpupuli-test/pull/21) ([bastelfreak](https://github.com/bastelfreak))
+
+**Merged pull requests:**
+
+- Update rubocop-rspec dependency [\#26](https://github.com/voxpupuli/voxpupuli-test/pull/26) ([alexjfisher](https://github.com/alexjfisher))
+
 ## [v1.5.0](https://github.com/voxpupuli/voxpupuli-test/tree/v1.5.0) (2020-06-27)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v1.4.0...v1.5.0)
