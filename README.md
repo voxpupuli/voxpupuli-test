@@ -21,6 +21,13 @@ In your `spec/spec_helper.rb`
 require 'voxpupuli/test/spec_helper'
 ```
 
+In your `.rubocop.yml` (see [Rubocop's documentation](https://docs.rubocop.org/rubocop/configuration.html#inheriting-configuration-from-a-dependency-gem)).
+
+```yaml
+inherit_gem:
+  voxpupuli-test: rubocop.yml
+```
+
 # Fact handling
 
 The recommended method is using [rspec-puppet-facts](https://github.com/mcanevet/rspec-puppet-facts) and is set up by default. This means the tests are writting as follows:
