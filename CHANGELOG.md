@@ -2,7 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
-## [v2.0.0](https://github.com/voxpupuli/voxpupuli-test/tree/v2.0.0) (2020-07-21)
+## [v2.1.0](https://github.com/voxpupuli/voxpupuli-test/tree/v2.1.0) (2020-08-18)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v2.0.0...v2.1.0)
+
+**Implemented enhancements:**
+
+- Add a Rubocop config [\#28](https://github.com/voxpupuli/voxpupuli-test/pull/28) ([ekohl](https://github.com/ekohl))
+
+## [v2.0.0](https://github.com/voxpupuli/voxpupuli-test/tree/v2.0.0) (2020-07-22)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v1.5.0...v2.0.0)
 
