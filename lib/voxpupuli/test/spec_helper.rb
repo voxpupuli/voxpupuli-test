@@ -27,15 +27,6 @@ end
 require 'voxpupuli/test/facts'
 require 'puppetlabs_spec_helper/module_spec_helper'
 
-# Generating facts is slow - this memoizes the facts between multiple classes.
-# Marshalling is used to get unique instances which helps when tests overrides
-# facts.
-FACTS_CACHE = {}
-def on_supported_os(opts = {})
-  result = FACTS_CACHE[opts.to_s] ||= super(opts)
-  Marshal.load(Marshal.dump(result))
-end
-
 RSpec.configure do |config|
   config.default_facter_version = suggest_facter_version
 
