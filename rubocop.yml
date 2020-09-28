@@ -333,7 +333,7 @@ Style/TrailingCommaInArguments:
   Enabled: True
 
 Style/TrailingCommaInLiteral:
-  Enabled: True
+  Enabled: False
 
 Style/GlobalVars:
   Enabled: True
