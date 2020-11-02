@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v2.1.1](https://github.com/voxpupuli/voxpupuli-test/tree/v2.1.1) (2020-11-02)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v2.1.0...v2.1.1)
+
+**Merged pull requests:**
+
+- Pin `rspec-expectations` [\#32](https://github.com/voxpupuli/voxpupuli-test/pull/32) ([alexjfisher](https://github.com/alexjfisher))
+- Disable Style/TrailingCommaInLiteral [\#31](https://github.com/voxpupuli/voxpupuli-test/pull/31) ([ghoneycutt](https://github.com/ghoneycutt))
+
 ## [v2.1.0](https://github.com/voxpupuli/voxpupuli-test/tree/v2.1.0) (2020-08-18)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v2.0.0...v2.1.0)
