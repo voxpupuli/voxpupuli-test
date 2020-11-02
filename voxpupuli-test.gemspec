@@ -22,6 +22,9 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'rspec-puppet-facts', '>= 1.9.5'
   s.add_runtime_dependency 'rspec-puppet-utils', '>= 1.9.5'
 
+  # avoid breaking change until https://github.com/rodjek/rspec-puppet/pull/811 is released
+  s.add_runtime_dependency 'rspec-expectations', '< 3.10.0'
+
   # Rubocop
   s.add_runtime_dependency 'rubocop', '~> 0.49.1'
   s.add_runtime_dependency 'rubocop-rspec', '~> 1.16.0'
