@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v2.1.2](https://github.com/voxpupuli/voxpupuli-test/tree/v2.1.2) (2020-11-10)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v2.1.1...v2.1.2)
+
+**Merged pull requests:**
+
+- Revert "Pin `rspec-expectations`" [\#34](https://github.com/voxpupuli/voxpupuli-test/pull/34) ([alexjfisher](https://github.com/alexjfisher))
+
 ## [v2.1.1](https://github.com/voxpupuli/voxpupuli-test/tree/v2.1.1) (2020-11-02)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v2.1.0...v2.1.1)
