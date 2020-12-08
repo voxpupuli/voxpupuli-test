@@ -161,6 +161,9 @@ Style/BracesAroundHashParameters:
 Style/CaseEquality:
   Enabled: True
 
+Style/TrailingCommaInArguments:
+  Enabled: False
+
 Layout/CaseIndentation:
   Enabled: True
 
