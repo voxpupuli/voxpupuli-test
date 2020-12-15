@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v2.2.0](https://github.com/voxpupuli/voxpupuli-test/tree/v2.2.0) (2020-12-15)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v2.1.2...v2.2.0)
+
+**Implemented enhancements:**
+
+- Disable Style/TrailingCommaInArguments [\#36](https://github.com/voxpupuli/voxpupuli-test/pull/36) ([traylenator](https://github.com/traylenator))
+- Add mocked custom facts based on metadata [\#19](https://github.com/voxpupuli/voxpupuli-test/pull/19) ([ekohl](https://github.com/ekohl))
+
+**Merged pull requests:**
+
+- Convert from Travis to Github Actions [\#37](https://github.com/voxpupuli/voxpupuli-test/pull/37) ([ekohl](https://github.com/ekohl))
+
 ## [v2.1.2](https://github.com/voxpupuli/voxpupuli-test/tree/v2.1.2) (2020-11-10)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v2.1.1...v2.1.2)
