@@ -21,4 +21,5 @@ namespace :check do
     end
   end
 end
-Rake::Task[:release_checks].enhance ['check:trailing_whitespace']
+
+task :check => 'check:trailing_whitespace'

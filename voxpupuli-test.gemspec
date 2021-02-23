@@ -12,13 +12,15 @@ Gem::Specification.new do |s|
 
   s.files       = Dir['lib/**/*.rb', 'rubocop.yml']
 
+  s.required_ruby_version = '>= 2.4.0'
+
   s.add_runtime_dependency 'rake'
 
   # Testing
   s.add_runtime_dependency 'facterdb', '>= 1.4.0'
   s.add_runtime_dependency 'metadata-json-lint'
   s.add_runtime_dependency 'parallel_tests'
-  s.add_runtime_dependency 'puppetlabs_spec_helper', '>= 2.14.0'
+  s.add_runtime_dependency 'puppetlabs_spec_helper', '>= 3.0.0'
   s.add_runtime_dependency 'rspec-puppet-facts', '>= 1.9.5'
   s.add_runtime_dependency 'rspec-puppet-utils', '>= 1.9.5'
 
