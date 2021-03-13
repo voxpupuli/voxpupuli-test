@@ -12,6 +12,8 @@ Gem::Specification.new do |s|
 
   s.files       = Dir['lib/**/*.rb', 'rubocop.yml']
 
+  s.required_ruby_version = '>= 2.4.0'
+
   s.add_runtime_dependency 'rake'
 
   # Testing
@@ -23,8 +25,9 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'rspec-puppet-utils', '>= 1.9.5'
 
   # Rubocop
-  s.add_runtime_dependency 'rubocop', '~> 0.49.1'
-  s.add_runtime_dependency 'rubocop-rspec', '~> 1.16.0'
+  s.add_runtime_dependency 'rubocop', '~> 1.11.0'
+  s.add_runtime_dependency 'rubocop-rspec', '~> 2.2.0'
+  s.add_runtime_dependency 'rubocop-rake', '~> 0.5.1'
 
   # Linting
   # meta gem to pull in all puppet-lint plugins + puppet-lint itself
