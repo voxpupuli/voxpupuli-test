@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v2.4.0](https://github.com/voxpupuli/voxpupuli-test/tree/v2.4.0) (2021-07-21)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v2.3.0...v2.4.0)
+
+**Implemented enhancements:**
+
+- Remove fact memoization [\#30](https://github.com/voxpupuli/voxpupuli-test/pull/30) ([ekohl](https://github.com/ekohl))
+
 ## [v2.3.0](https://github.com/voxpupuli/voxpupuli-test/tree/v2.3.0) (2021-07-13)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v2.2.0...v2.3.0)
