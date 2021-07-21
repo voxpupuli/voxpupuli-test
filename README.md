@@ -1,5 +1,12 @@
 # Voxpupuli Test Gem
 
+[![License](https://img.shields.io/github/license/voxpupuli/voxpupuli-test.svg)](https://github.com/voxpupuli/voxpupuli-test/blob/master/LICENSE)
+[![Test](https://github.com/voxpupuli/voxpupuli-test/actions/workflows/test.yml/badge.svg)](https://github.com/voxpupuli/voxpupuli-test/actions/workflows/test.yml)
+[![codecov](https://codecov.io/gh/voxpupuli/voxpupuli-test/branch/master/graph/badge.svg?token=Mypkl78hvK)](https://codecov.io/gh/voxpupuli/voxpupuli-test)
+[![Release](https://github.com/voxpupuli/voxpupuli-test/actions/workflows/release.yml/badge.svg)](https://github.com/voxpupuli/voxpupuli-test/actions/workflows/release.yml)
+[![RubyGem Version](https://img.shields.io/gem/v/voxpupuli-test.svg)](https://rubygems.org/gems/voxpupuli-test)
+[![RubyGem Downloads](https://img.shields.io/gem/dt/voxpupuli-test.svg)](https://rubygems.org/gems/voxpupuli-test)
+
 This is a helper Gem to test the various Vox Pupuli Puppet modules. This Gem currently serves only to encapsulate common `rake` tasks related to releasing modules. The aim is to reduce the boiler plate and need for modulesync.
 
 # Usage
