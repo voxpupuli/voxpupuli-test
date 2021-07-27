@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
 
   s.files       = Dir['lib/**/*.rb', 'rubocop.yml']
 
-  s.required_ruby_version = '>= 2.4.0'
+  s.required_ruby_version = '>= 2.5.0'
 
   s.add_runtime_dependency 'rake'
 
@@ -20,7 +20,8 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'facterdb', '>= 1.4.0'
   s.add_runtime_dependency 'metadata-json-lint', '>= 3.0.1'
   s.add_runtime_dependency 'parallel_tests'
-  s.add_runtime_dependency 'puppetlabs_spec_helper', '>= 2.16.0'
+  # 4.0.0 provides rubocop annotations in GitHub Actions
+  s.add_runtime_dependency 'puppetlabs_spec_helper', '>= 4.0.0'
   s.add_runtime_dependency 'rspec-puppet-facts', '>= 2.0.1', '< 3'
   s.add_runtime_dependency 'rspec-puppet-utils', '>= 1.9.5'
 
