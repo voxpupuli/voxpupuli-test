@@ -1,4 +1,5 @@
 require 'puppetlabs_spec_helper/rake_tasks'
+require 'metadata_json_deps'
 
 PuppetLint.configuration.log_format = '%{path}:%{line}:%{check}:%{KIND}:%{message}'
 
@@ -22,3 +23,10 @@ namespace :check do
   end
 end
 Rake::Task[:release_checks].enhance ['check:trailing_whitespace']
+
+
+desc 'Run metadata-json-deps'
+task :metadata_deps do
+  files = FileList['metadata.json']
+  MetadataJsonDeps::run(files)
+end

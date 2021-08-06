@@ -110,3 +110,13 @@ end
 ```
 
 Note that this helper deals with symbols/strings for you as well.
+
+# Identify dependencies from metadata.json that aren't up2date
+
+This gem provides the `check:metadata_deps` rake task:
+
+```console
+$ bundle exec rake check:metadata_deps
+Checking metadata.json
+  puppetlabs/stdlib (>= 4.25.0 < 7.0.0) doesn't match 7.1.0
+```
