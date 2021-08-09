@@ -21,6 +21,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'puppetlabs_spec_helper', '>= 2.14.0'
   s.add_runtime_dependency 'rspec-puppet-facts', '>= 2.0.1', '< 3'
   s.add_runtime_dependency 'rspec-puppet-utils', '>= 1.9.5'
+  s.add_runtime_dependency 'metadata_json_deps', '>= 0.2.0'
 
   # Rubocop
   s.add_runtime_dependency 'rubocop', '~> 0.49.1'
