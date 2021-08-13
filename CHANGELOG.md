@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v2.5.0](https://github.com/voxpupuli/voxpupuli-test/tree/v2.5.0) (2021-08-13)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v2.4.0...v2.5.0)
+
+**Implemented enhancements:**
+
+- Add metadata\_json\_deps + rake task [\#47](https://github.com/voxpupuli/voxpupuli-test/pull/47) ([bastelfreak](https://github.com/bastelfreak))
+
+**Fixed bugs:**
+
+- Append `check:trailing_whitespace` rake task to `check` and not `release_checks` [\#48](https://github.com/voxpupuli/voxpupuli-test/pull/48) ([bastelfreak](https://github.com/bastelfreak))
+
+**Merged pull requests:**
+
+- require metadata-json-lint 3 or newer/metadata\_json\_deps 0.3.0 or newer [\#50](https://github.com/voxpupuli/voxpupuli-test/pull/50) ([bastelfreak](https://github.com/bastelfreak))
+- Use default facter version from rspec-puppet-facts [\#49](https://github.com/voxpupuli/voxpupuli-test/pull/49) ([ekohl](https://github.com/ekohl))
+- Depend on puppet-lint \>= 2.5.0 [\#45](https://github.com/voxpupuli/voxpupuli-test/pull/45) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [v2.4.0](https://github.com/voxpupuli/voxpupuli-test/tree/v2.4.0) (2021-07-21)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v2.3.0...v2.4.0)
