@@ -28,23 +28,8 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'rubocop-rspec', '~> 1.16.0'
 
   # Linting
-  # pull in 2.5.0; required for Ruby 3 support
-  s.add_runtime_dependency 'puppet-lint', '>= 2.5.0'
-  s.add_runtime_dependency 'puppet-lint-absolute_classname-check', '>= 2.0.0'
-  s.add_runtime_dependency 'puppet-lint-anchor-check'
-  s.add_runtime_dependency 'puppet-lint-classes_and_types_beginning_with_digits-check'
-  s.add_runtime_dependency 'puppet-lint-leading_zero-check'
-  s.add_runtime_dependency 'puppet-lint-legacy_facts-check'
-  s.add_runtime_dependency 'puppet-lint-topscope-variable-check'
-  s.add_runtime_dependency 'puppet-lint-trailing_comma-check'
-  s.add_runtime_dependency 'puppet-lint-unquoted_string-check'
-  s.add_runtime_dependency 'puppet-lint-variable_contains_upcase'
-  s.add_runtime_dependency 'puppet-lint-version_comparison-check'
-  s.add_runtime_dependency 'puppet-lint-resource_reference_syntax'
-  s.add_runtime_dependency 'puppet-lint-manifest_whitespace-check'
-  s.add_runtime_dependency 'puppet-lint-file_ensure-check'
-  s.add_runtime_dependency 'puppet-lint-strict_indent-check'
-  s.add_runtime_dependency 'puppet-lint-optional_default-check'
+  # meta gem to pull in all puppet-lint plugins + puppet-lint itself
+  s.add_runtime_dependency 'voxpupuli-puppet-lint-plugins'
 
   # development
   s.add_development_dependency 'rspec'
