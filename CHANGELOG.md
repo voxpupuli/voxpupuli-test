@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v2.6.0](https://github.com/voxpupuli/voxpupuli-test/tree/v2.6.0) (2021-08-26)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v2.5.0...v2.6.0)
+
+**Implemented enhancements:**
+
+- Use voxpupuli-puppet-lint-plugins [\#52](https://github.com/voxpupuli/voxpupuli-test/pull/52) ([bastelfreak](https://github.com/bastelfreak))
+
+**Fixed bugs:**
+
+- Revert "Add metadata\_json\_deps + rake task" [\#54](https://github.com/voxpupuli/voxpupuli-test/pull/54) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [v2.5.0](https://github.com/voxpupuli/voxpupuli-test/tree/v2.5.0) (2021-08-13)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v2.4.0...v2.5.0)
