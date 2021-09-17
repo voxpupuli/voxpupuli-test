@@ -28,7 +28,7 @@ Gem::Specification.new do |s|
 
   # Linting
   # meta gem to pull in all puppet-lint plugins + puppet-lint itself
-  s.add_runtime_dependency 'voxpupuli-puppet-lint-plugins', '~> 1.0'
+  s.add_runtime_dependency 'voxpupuli-puppet-lint-plugins', '~> 2.0'
 
   # development
   s.add_development_dependency 'rspec'
