@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v3.0.0](https://github.com/voxpupuli/voxpupuli-test/tree/v3.0.0) (2021-10-02)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v2.6.0...v3.0.0)
+
+**Breaking changes:**
+
+- Require voxpupuli-puppet-lint-plugins 2.x instead of 1.x [\#56](https://github.com/voxpupuli/voxpupuli-test/pull/56) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [v2.6.0](https://github.com/voxpupuli/voxpupuli-test/tree/v2.6.0) (2021-08-26)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v2.5.0...v2.6.0)
