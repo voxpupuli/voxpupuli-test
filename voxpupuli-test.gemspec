@@ -25,9 +25,9 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'rspec-puppet-utils', '>= 1.9.5'
 
   # Rubocop
-  s.add_runtime_dependency 'rubocop', '~> 1.11.0'
-  s.add_runtime_dependency 'rubocop-rspec', '~> 2.2.0'
-  s.add_runtime_dependency 'rubocop-rake', '~> 0.5.1'
+  s.add_runtime_dependency 'rubocop', '~> 1.22.3'
+  s.add_runtime_dependency 'rubocop-rspec', '~> 2.5.0'
+  s.add_runtime_dependency 'rubocop-rake', '~> 0.6.0'
 
   # Linting
   # meta gem to pull in all puppet-lint plugins + puppet-lint itself
