@@ -547,6 +547,12 @@ Style/FormatStringToken:
 RSpec/FilePath:
   Enabled: false
 
+# Leaving these enabled creates too much busy work
+RSpec/ContextWording:
+  Enabled: false
+Naming/HeredocDelimiterNaming:
+  Enabled: false
+
 # New cops available after rubocop upgrade
 Gemspec/DateAssignment: # (new in 1.10)
   Enabled: true
