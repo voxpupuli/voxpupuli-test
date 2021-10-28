@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v4.0.0](https://github.com/voxpupuli/voxpupuli-test/tree/v4.0.0) (2021-10-28)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v3.0.0...v4.0.0)
+
+**Breaking changes:**
+
+- Use latest rubocop and target ruby 2.5 [\#40](https://github.com/voxpupuli/voxpupuli-test/pull/40) ([alexjfisher](https://github.com/alexjfisher))
+
 ## [v3.0.0](https://github.com/voxpupuli/voxpupuli-test/tree/v3.0.0) (2021-10-02)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v2.6.0...v3.0.0)
