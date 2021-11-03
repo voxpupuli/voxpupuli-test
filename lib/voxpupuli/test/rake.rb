@@ -1,6 +1,8 @@
 require 'puppetlabs_spec_helper/rake_tasks'
 
 PuppetLint.configuration.log_format = '%{path}:%{line}:%{check}:%{KIND}:%{message}'
+# without this, puppet-lint always gives an exit code of 0
+PuppetLint.configuration.fail_on_warnings = true
 
 desc 'Run tests'
 task test: [:release_checks]
