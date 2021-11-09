@@ -27,7 +27,7 @@ Gem::Specification.new do |s|
 
   # Rubocop
   s.add_runtime_dependency 'rubocop', '~> 1.22.3'
-  s.add_runtime_dependency 'rubocop-rspec', '~> 2.5.0'
+  s.add_runtime_dependency 'rubocop-rspec', '~> 2.5'
   s.add_runtime_dependency 'rubocop-rake', '~> 0.6.0'
 
   # Linting
