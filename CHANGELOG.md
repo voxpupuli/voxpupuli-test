@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v4.1.0](https://github.com/voxpupuli/voxpupuli-test/tree/v4.1.0) (2021-11-09)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v4.0.0...v4.1.0)
+
+**Implemented enhancements:**
+
+- rubocop-rspec: allow \>= 2.6 \< 3 [\#60](https://github.com/voxpupuli/voxpupuli-test/pull/60) ([bastelfreak](https://github.com/bastelfreak))
+
+**Fixed bugs:**
+
+- puppet-lint: fail on warnings [\#59](https://github.com/voxpupuli/voxpupuli-test/pull/59) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [v4.0.0](https://github.com/voxpupuli/voxpupuli-test/tree/v4.0.0) (2021-10-28)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v3.0.0...v4.0.0)
