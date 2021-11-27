@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v5.1.0](https://github.com/voxpupuli/voxpupuli-test/tree/v5.1.0) (2021-11-27)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v5.0.0...v5.1.0)
+
+**Implemented enhancements:**
+
+- Set facter implementation to rspec [\#62](https://github.com/voxpupuli/voxpupuli-test/pull/62) ([ekohl](https://github.com/ekohl))
+
 ## [v5.0.0](https://github.com/voxpupuli/voxpupuli-test/tree/v5.0.0) (2021-11-26)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v4.1.0...v5.0.0)
