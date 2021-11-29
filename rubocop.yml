@@ -504,6 +504,10 @@ Lint/UselessAssignment:
 Layout/ClosingParenthesisIndentation:
   Enabled: True
 
+# Boolean symbols are used quite extensively in Puppet types/providers
+Lint/BooleanSymbol:
+  Enabled: False
+
 # RSpec
 
 RSpec/BeforeAfterAll:
