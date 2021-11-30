@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v5.1.1](https://github.com/voxpupuli/voxpupuli-test/tree/v5.1.1) (2021-11-30)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v5.1.0...v5.1.1)
+
+**Merged pull requests:**
+
+- Disable `Lint/BooleanSymbol` [\#66](https://github.com/voxpupuli/voxpupuli-test/pull/66) ([alexjfisher](https://github.com/alexjfisher))
+
 ## [v5.1.0](https://github.com/voxpupuli/voxpupuli-test/tree/v5.1.0) (2021-11-27)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v5.0.0...v5.1.0)
