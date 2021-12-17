@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v5.2.0](https://github.com/voxpupuli/voxpupuli-test/tree/v5.2.0) (2021-12-17)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v5.1.1...v5.2.0)
+
+**Merged pull requests:**
+
+- Rubocop: Disable ImplicitSubject [\#68](https://github.com/voxpupuli/voxpupuli-test/pull/68) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [v5.1.1](https://github.com/voxpupuli/voxpupuli-test/tree/v5.1.1) (2021-11-30)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v5.1.0...v5.1.1)
