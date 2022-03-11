@@ -614,6 +614,8 @@ Style/RedundantArgument: # (new in 1.4)
   Enabled: true
 Style/SwapValues: # (new in 1.1)
   Enabled: true
+Style/OptionalBooleanParameter:
+  Enabled: false
 Layout/LineEndStringConcatenationIndentation: # new in 1.18
   Enabled: true
 Lint/AmbiguousOperatorPrecedence: # new in 1.21
