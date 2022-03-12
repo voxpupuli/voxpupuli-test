@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v5.3.0](https://github.com/voxpupuli/voxpupuli-test/tree/v5.3.0) (2022-03-12)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v5.2.0...v5.3.0)
+
+**Implemented enhancements:**
+
+- rubocop: Naming/MethodParameterName: Add common short parameters names to AllowedNames [\#71](https://github.com/voxpupuli/voxpupuli-test/pull/71) ([root-expert](https://github.com/root-expert))
+- rubocop: Disable Style/OptionalBooleanParameter [\#70](https://github.com/voxpupuli/voxpupuli-test/pull/70) ([root-expert](https://github.com/root-expert))
+
 ## [v5.2.0](https://github.com/voxpupuli/voxpupuli-test/tree/v5.2.0) (2021-12-17)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v5.1.1...v5.2.0)
