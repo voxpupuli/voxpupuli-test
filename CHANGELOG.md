@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v5.3.1](https://github.com/voxpupuli/voxpupuli-test/tree/v5.3.1) (2022-03-28)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v5.3.0...v5.3.1)
+
+**Fixed bugs:**
+
+- rubocop: Naming/PredicateName: Fix AllowedMethods default is\_a? [\#75](https://github.com/voxpupuli/voxpupuli-test/pull/75) ([root-expert](https://github.com/root-expert))
+- rubocop: Naming/PredicateName: Add is\_to\_s to AllowedMethods [\#74](https://github.com/voxpupuli/voxpupuli-test/pull/74) ([root-expert](https://github.com/root-expert))
+
 ## [v5.3.0](https://github.com/voxpupuli/voxpupuli-test/tree/v5.3.0) (2022-03-12)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v5.2.0...v5.3.0)
