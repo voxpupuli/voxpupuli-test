@@ -139,6 +139,8 @@ Layout/ArrayAlignment:
 
 Layout/HashAlignment:
   Enabled: True
+  EnforcedHashRocketStyle: [key, table]
+  EnforcedColonStyle: [key, table]
 
 Layout/ParameterAlignment:
   Enabled: True
