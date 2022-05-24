@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v5.4.0](https://github.com/voxpupuli/voxpupuli-test/tree/v5.4.0) (2022-05-24)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v5.3.1...v5.4.0)
+
+**Implemented enhancements:**
+
+- Add Ruby 3.1 to CI, build gem during CI [\#79](https://github.com/voxpupuli/voxpupuli-test/pull/79) ([bastelfreak](https://github.com/bastelfreak))
+
+**Fixed bugs:**
+
+- Layout/HashAlignment: Allow both key and table styles [\#77](https://github.com/voxpupuli/voxpupuli-test/pull/77) ([root-expert](https://github.com/root-expert))
+
 ## [v5.3.1](https://github.com/voxpupuli/voxpupuli-test/tree/v5.3.1) (2022-03-28)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v5.3.0...v5.3.1)
