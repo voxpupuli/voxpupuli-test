@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v5.4.1](https://github.com/voxpupuli/voxpupuli-test/tree/v5.4.1) (2022-07-18)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v5.4.0...v5.4.1)
+
+**Fixed bugs:**
+
+- Correct systemd custom fact implementation [\#81](https://github.com/voxpupuli/voxpupuli-test/pull/81) ([ekohl](https://github.com/ekohl))
+- Handle puppet/systemd like camptocamp/systemd [\#80](https://github.com/voxpupuli/voxpupuli-test/pull/80) ([ekohl](https://github.com/ekohl))
+
 ## [v5.4.0](https://github.com/voxpupuli/voxpupuli-test/tree/v5.4.0) (2022-05-24)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v5.3.1...v5.4.0)
