@@ -50,7 +50,7 @@ def add_facts_for_metadata(metadata)
 
   metadata['dependencies'].each do |dependency|
     case normalize_module_name(dependency['name'])
-    when 'camptocamp/systemd'
+    when 'camptocamp/systemd', 'puppet/systemd'
       add_custom_fact :systemd, ->(os, facts) { facts[:service_provider] == 'systemd' }
     when 'puppetlabs/stdlib'
       add_stdlib_facts
