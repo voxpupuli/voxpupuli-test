@@ -85,7 +85,7 @@ def add_stdlib_facts
     when 'openbsd'
       'openbsd'
     when 'redhat'
-      facts[:operatingsystemrelease].to_i >= 7 ? 'systemd' : 'redhat'
+      facts[:operatingsystemmajrelease].to_i >= 7 ? 'systemd' : 'redhat'
     when 'suse'
       facts[:operatingsystemmajrelease].to_i >= 12 ? 'systemd' : 'redhat'
     when 'windows'
