@@ -7,7 +7,7 @@
 [![RubyGem Version](https://img.shields.io/gem/v/voxpupuli-test.svg)](https://rubygems.org/gems/voxpupuli-test)
 [![RubyGem Downloads](https://img.shields.io/gem/dt/voxpupuli-test.svg)](https://rubygems.org/gems/voxpupuli-test)
 
-This is a helper Gem to test the various Vox Pupuli Puppet modules. This Gem currently serves only to encapsulate common `rake` tasks related to releasing modules. The aim is to reduce the boiler plate and need for modulesync.
+This is a helper Gem to test the various Vox Pupuli Puppet modules. This Gem provides common functionality for rspec-puppet based testing. The aim is to reduce the boiler plate and need for modulesync.
 
 # Usage
 Add the `voxpupuli-test` Gem to your `Gemfile`:
