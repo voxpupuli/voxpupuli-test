@@ -1,8 +1,13 @@
 require 'rspec/core/rake_task'
+require 'rubocop/rake_task'
 
 RSpec::Core::RakeTask.new(:spec)
+RuboCop::RakeTask.new
 
-task :default => :spec
+task :default => [
+  :spec,
+  :rubocop,
+]
 
 begin
   require 'github_changelog_generator/task'
