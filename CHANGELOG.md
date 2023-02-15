@@ -2,9 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
-## [v5.4.1](https://github.com/voxpupuli/voxpupuli-test/tree/v5.4.1) (2022-07-18)
+## [v5.5.0](https://github.com/voxpupuli/voxpupuli-test/tree/v5.5.0) (2023-02-15)
 
-[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v5.4.0...v5.4.1)
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/5.4.1...v5.5.0)
+
+**Implemented enhancements:**
+
+- Enhance CI with more Ruby/Puppet versions [\#85](https://github.com/voxpupuli/voxpupuli-test/pull/85) ([bastelfreak](https://github.com/bastelfreak))
+- require PSH 5.x, require puppet-strings [\#84](https://github.com/voxpupuli/voxpupuli-test/pull/84) ([bastelfreak](https://github.com/bastelfreak))
+
+**Merged pull requests:**
+
+- Correct description in README [\#83](https://github.com/voxpupuli/voxpupuli-test/pull/83) ([ekohl](https://github.com/ekohl))
+
+## [5.4.1](https://github.com/voxpupuli/voxpupuli-test/tree/5.4.1) (2022-07-18)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v5.4.0...5.4.1)
 
 **Fixed bugs:**
 
