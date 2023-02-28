@@ -32,7 +32,7 @@ Gem::Specification.new do |s|
 
   # Rubocop
   # newest versions that still support Ruby 2.5
-  s.add_runtime_dependency 'rubocop', '~> 1.28.3'
+  s.add_runtime_dependency 'rubocop', '~> 1.28.2'
   s.add_runtime_dependency 'rubocop-rspec', '~> 2.10.0'
   s.add_runtime_dependency 'rubocop-rake', '~> 0.6.0'
 

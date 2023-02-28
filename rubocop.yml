@@ -1,6 +1,8 @@
 # This is a shared config for easy consumption in other modules, without having
 # to sync over a large file
-require: rubocop-rspec
+require:
+  - rubocop-rspec
+  - rubocop-rake
 
 AllCops:
   # Puppet agent 6 ships with ruby 2.5.  Puppetserver 6 uses JRuby 9.2.x (Ruby 2.5 compatible) since version 6.1.0.
@@ -17,6 +19,7 @@ AllCops:
     - Rakefile
     - Guardfile
     - Vagrantfile
+  NewCops: enable
 
 Layout/ConditionPosition:
   Enabled: True
