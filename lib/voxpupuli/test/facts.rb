@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rspec-puppet-facts'
 include RspecPuppetFacts
 
@@ -51,7 +53,7 @@ def add_facts_for_metadata(metadata)
   metadata['dependencies'].each do |dependency|
     case normalize_module_name(dependency['name'])
     when 'camptocamp/systemd', 'puppet/systemd'
-      add_custom_fact :systemd, ->(os, facts) { facts['service_provider'] == 'systemd' }
+      add_custom_fact :systemd, ->(_os, facts) { facts['service_provider'] == 'systemd' }
     when 'puppetlabs/stdlib'
       add_stdlib_facts
     end
@@ -60,6 +62,7 @@ end
 
 def normalize_module_name(name)
   return unless name
+
   name.sub('-', '/')
 end
 
@@ -70,7 +73,7 @@ def add_stdlib_facts
 
   # Rough conversion of grepping in the puppet source:
   # grep defaultfor lib/puppet/provider/service/*.rb
-  add_custom_fact :service_provider, ->(os, facts) do
+  add_custom_fact :service_provider, lambda { |_os, facts|
     case facts[:osfamily].downcase
     when 'archlinux'
       'systemd'
@@ -93,5 +96,5 @@ def add_stdlib_facts
     else
       'init'
     end
-  end
+  }
 end

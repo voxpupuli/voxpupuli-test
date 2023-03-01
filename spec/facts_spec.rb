@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 require 'voxpupuli/test/facts'
 
@@ -10,9 +12,9 @@ describe 'override_facts' do
         'release' => {
           'full' => '7.7.1908',
           'major' => '7',
-          'minor' => '7'
+          'minor' => '7',
         },
-      }
+      },
     }
   end
 
@@ -25,9 +27,9 @@ describe 'override_facts' do
           'release' => {
             'full' => '7.7.1908',
             'major' => '7',
-            'minor' => '7'
+            'minor' => '7',
           },
-        }
+        },
       }
     end
 
@@ -43,16 +45,16 @@ describe 'override_facts' do
           'release' => {
             'full' => '7.7.1908',
             'major' => '7',
-            'minor' => '7'
+            'minor' => '7',
           },
         },
         ruby: {
           'sitedir' => '/usr/local/share/ruby/site_ruby',
-        }
+        },
       }
     end
 
-    it { expect(override_facts(base_facts, ruby: {sitedir: '/usr/local/share/ruby/site_ruby'})).to eq(expected) }
+    it { expect(override_facts(base_facts, ruby: { sitedir: '/usr/local/share/ruby/site_ruby' })).to eq(expected) }
   end
 
   describe 'with deep merging' do
@@ -64,13 +66,13 @@ describe 'override_facts' do
           'release' => {
             'full' => '7.7.1908',
             'major' => '7',
-            'minor' => '8'
+            'minor' => '8',
           },
-        }
+        },
       }
     end
 
-    it { expect(override_facts(base_facts, os: {release: {minor: '8'}})).to eq(expected) }
+    it { expect(override_facts(base_facts, os: { release: { minor: '8' } })).to eq(expected) }
   end
 
   describe 'with strings' do
@@ -82,19 +84,20 @@ describe 'override_facts' do
           'release' => {
             'full' => '7.7.1908',
             'major' => '7',
-            'minor' => '8'
+            'minor' => '8',
           },
-        }
+        },
       }
     end
 
-    it { expect(override_facts(base_facts, os: {'release' => {minor: '8'}})).to eq(expected) }
+    it { expect(override_facts(base_facts, os: { 'release' => { minor: '8' } })).to eq(expected) }
   end
 end
 
 describe 'add_facts_for_metadata' do
-  before(:each) { RspecPuppetFacts.reset }
-  after(:each) { RspecPuppetFacts.reset }
+  before { RspecPuppetFacts.reset }
+
+  after { RspecPuppetFacts.reset }
 
   let(:metadata) do
     { 'dependencies' => dependencies }
@@ -112,7 +115,7 @@ describe 'add_facts_for_metadata' do
   context 'with systemd' do
     let(:dependencies) do
       [
-        {'name' => 'puppet/systemd'},
+        { 'name' => 'puppet/systemd' },
       ]
     end
 
@@ -124,26 +127,26 @@ describe 'add_facts_for_metadata' do
     context 'and stdlib' do
       let(:dependencies) do
         [
-          {'name' => 'puppetlabs/stdlib'},
-          {'name' => 'puppet/systemd'},
+          { 'name' => 'puppetlabs/stdlib' },
+          { 'name' => 'puppet/systemd' },
         ]
       end
 
       it 'has systemd on Red Hat 7' do
         add_facts_for_metadata(metadata)
-        facts = RspecPuppetFacts.with_custom_facts('redhat-7-x86_64', {osfamily: 'RedHat', operatingsystemmajrelease: '7'})
+        facts = RspecPuppetFacts.with_custom_facts('redhat-7-x86_64', { osfamily: 'RedHat', operatingsystemmajrelease: '7' })
         expect(facts['systemd']).to be true
       end
 
       it 'has no systemd on Red Hat 6' do
         add_facts_for_metadata(metadata)
-        facts = RspecPuppetFacts.with_custom_facts('redhat-6-x86_64', {osfamily: 'RedHat', operatingsystemmajrelease: '6'})
+        facts = RspecPuppetFacts.with_custom_facts('redhat-6-x86_64', { osfamily: 'RedHat', operatingsystemmajrelease: '6' })
         expect(facts['systemd']).to be false
       end
 
       it 'has no systemd on openbsd' do
         add_facts_for_metadata(metadata)
-        facts = RspecPuppetFacts.with_custom_facts('openbsd-6.4-x86_64', {osfamily: 'OpenBSD'})
+        facts = RspecPuppetFacts.with_custom_facts('openbsd-6.4-x86_64', { osfamily: 'OpenBSD' })
         expect(facts['systemd']).to be false
       end
     end
@@ -152,7 +155,7 @@ describe 'add_facts_for_metadata' do
   context 'with stdlib' do
     let(:dependencies) do
       [
-        {'name' => 'puppetlabs/stdlib'},
+        { 'name' => 'puppetlabs/stdlib' },
       ]
     end
 

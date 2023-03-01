@@ -1,10 +1,10 @@
+# frozen_string_literal: true
+
 RSpec.configure do |config|
   # puppetlabs_spec_helper defaults to mocha but emits a deprecation warning
   # Vox Pupuli prefers rspec to avoid the deprecation warning unless explicitly
   # set
-  if config.instance_variable_get(:@mock_framework).nil?
-    config.mock_with :rspec
-  end
+  config.mock_with :rspec if config.instance_variable_get(:@mock_framework).nil?
 end
 
 require 'voxpupuli/test/facts'
