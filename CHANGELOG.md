@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v5.6.0](https://github.com/voxpupuli/voxpupuli-test/tree/v5.6.0) (2023-02-28)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v5.5.0...v5.6.0)
+
+**Implemented enhancements:**
+
+- voxpupuli-puppet-lint-plugins: Require 4.x [\#89](https://github.com/voxpupuli/voxpupuli-test/pull/89) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [v5.5.0](https://github.com/voxpupuli/voxpupuli-test/tree/v5.5.0) (2023-02-15)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/5.4.1...v5.5.0)
