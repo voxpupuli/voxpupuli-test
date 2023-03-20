@@ -31,7 +31,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'rspec-puppet-utils', '>= 1.9.5'
 
   # Rubocop
-  s.add_runtime_dependency 'rubocop', '~> 1.22.3'
+  s.add_runtime_dependency 'rubocop', '>= 1.22.3', '< 1.49.0'
   s.add_runtime_dependency 'rubocop-rspec', '~> 2.5'
   s.add_runtime_dependency 'rubocop-rake', '~> 0.6.0'
 
