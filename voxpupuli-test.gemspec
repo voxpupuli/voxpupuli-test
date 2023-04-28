@@ -14,11 +14,11 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = '>= 2.7.0'
 
-  s.add_runtime_dependency 'rake'
+  s.add_runtime_dependency 'rake', '~> 13.0', '>= 13.0.6'
 
   # Testing
   s.add_runtime_dependency 'facterdb', '>= 1.4.0', '< 2'
-  s.add_runtime_dependency 'metadata-json-lint', '>= 3.0.1'
+  s.add_runtime_dependency 'metadata-json-lint', '~> 3.0', '>= 3.0.3'
   s.add_runtime_dependency 'parallel_tests', '~> 4.2'
   # 4.0.0 provides rubocop annotations in GitHub Actions
   # 5.0.0 supports the validation of REFERENCE.md
@@ -40,5 +40,5 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'voxpupuli-puppet-lint-plugins', '~> 5.0'
 
   # development
-  s.add_development_dependency 'rspec'
+  s.add_development_dependency 'rspec', '~> 3.12'
 end
