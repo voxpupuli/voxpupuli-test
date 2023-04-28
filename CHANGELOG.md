@@ -2,7 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
-## [v5.6.0](https://github.com/voxpupuli/voxpupuli-test/tree/v5.6.0) (2023-02-28)
+## [v5.7.0](https://github.com/voxpupuli/voxpupuli-test/tree/v5.7.0) (2023-04-28)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v5.6.0...v5.7.0)
+
+**Implemented enhancements:**
+
+- Add Puppet 8 to CI matrix [\#103](https://github.com/voxpupuli/voxpupuli-test/pull/103) ([bastelfreak](https://github.com/bastelfreak))
+
+**Merged pull requests:**
+
+- CI: Add a dummy task github rules can depend on [\#102](https://github.com/voxpupuli/voxpupuli-test/pull/102) ([bastelfreak](https://github.com/bastelfreak))
+- Bump actions/checkout from 2 to 3 [\#96](https://github.com/voxpupuli/voxpupuli-test/pull/96) ([dependabot[bot]](https://github.com/apps/dependabot))
+- CI: Run on merges to master [\#95](https://github.com/voxpupuli/voxpupuli-test/pull/95) ([bastelfreak](https://github.com/bastelfreak))
+- dependabot: check for github actions and gems [\#94](https://github.com/voxpupuli/voxpupuli-test/pull/94) ([bastelfreak](https://github.com/bastelfreak))
+- Remove use of legacy facts [\#93](https://github.com/voxpupuli/voxpupuli-test/pull/93) ([alexjfisher](https://github.com/alexjfisher))
+
+## [v5.6.0](https://github.com/voxpupuli/voxpupuli-test/tree/v5.6.0) (2023-03-01)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v5.5.0...v5.6.0)
 
