@@ -22,13 +22,13 @@ jobs:
           - "2.6"
           - "2.5"
         puppet:
-          - "~> 7.0"
+          - "~> 7.24"
           - "~> 6.29"
         exclude:
           - ruby: "2.6"
-            puppet: "~> 7.0"
+            puppet: "~> 7.24"
           - ruby: "2.5"
-            puppet: "~> 7.0"
+            puppet: "~> 7.24"
 
           - ruby: "3.1"
             puppet: "~> 6.29"
