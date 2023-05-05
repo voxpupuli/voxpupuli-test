@@ -13,4 +13,4 @@ group :coverage, optional: ENV['COVERAGE']!='yes' do
 end
 
 # Override gemspec for CI matrix builds.
-gem 'puppet', ENV.fetch('PUPPET_VERSION', '>= 6.29'), :require => false
+gem 'puppet', ENV.fetch('PUPPET_VERSION', '~> 7.24'), :require => false
