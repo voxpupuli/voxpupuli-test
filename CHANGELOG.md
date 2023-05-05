@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v6.0.0](https://github.com/voxpupuli/voxpupuli-test/tree/v6.0.0) (2023-05-05)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v5.7.0...v6.0.0)
+
+**Breaking changes:**
+
+- puppet-strings: Require 4.x [\#107](https://github.com/voxpupuli/voxpupuli-test/pull/107) ([bastelfreak](https://github.com/bastelfreak))
+- voxpupuli-puppet-lint-plugins: Require 5.x [\#106](https://github.com/voxpupuli/voxpupuli-test/pull/106) ([bastelfreak](https://github.com/bastelfreak))
+- Require Ruby 2.7 or newer, drop Puppet 6 support [\#105](https://github.com/voxpupuli/voxpupuli-test/pull/105) ([bastelfreak](https://github.com/bastelfreak))
+
+**Implemented enhancements:**
+
+- Build gems with verbosity and strictness [\#109](https://github.com/voxpupuli/voxpupuli-test/pull/109) ([bastelfreak](https://github.com/bastelfreak))
+
+**Fixed bugs:**
+
+- GCG: Add faraday-retry dep [\#110](https://github.com/voxpupuli/voxpupuli-test/pull/110) ([bastelfreak](https://github.com/bastelfreak))
+
+**Merged pull requests:**
+
+- Gemfile: Default to Puppet 7 [\#111](https://github.com/voxpupuli/voxpupuli-test/pull/111) ([bastelfreak](https://github.com/bastelfreak))
+- gem dependencies: Add upper version limits [\#108](https://github.com/voxpupuli/voxpupuli-test/pull/108) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [v5.7.0](https://github.com/voxpupuli/voxpupuli-test/tree/v5.7.0) (2023-04-28)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v5.6.0...v5.7.0)
