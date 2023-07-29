@@ -17,6 +17,10 @@ RSpec.configure do |config|
   # and 7.12+ and requires rspec-puppet 2.11.0+.
   config.facter_implementation = 'rspec'
 
+  # always mock trusted/server side facts
+  config.trusted_node_data = true
+  config.trusted_server_facts = true
+
   config.after(:suite) do
     RSpec::Puppet::Coverage.report!
   end
