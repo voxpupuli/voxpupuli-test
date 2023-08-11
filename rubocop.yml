@@ -5,8 +5,8 @@ require:
   - rubocop-rake
 
 AllCops:
-  # Puppet agent 6 ships with ruby 2.5.  Puppetserver 6 uses JRuby 9.2.x (Ruby 2.5 compatible) since version 6.1.0.
-  TargetRubyVersion: 2.5
+  # Puppetserver 7 uses Jruby 9.3 which is compatible to C Ruby 2.6
+  TargetRubyVersion: 2.6
   DisplayCopNames: true
   ExtraDetails: true
   DisplayStyleGuide: true
@@ -570,8 +570,6 @@ Naming/MethodParameterName:
   AllowedNames: ['at', 'by', 'to', 'db', 'id', 'in', 'io', 'ip', 'of', 'on', 'os', 'pp', 'is']
 
 # New cops available after rubocop upgrade
-Gemspec/DateAssignment: # (new in 1.10)
-  Enabled: true
 Lint/AmbiguousAssignment: # (new in 1.7)
   Enabled: true
 Lint/DeprecatedConstants: # (new in 1.8)
@@ -667,4 +665,7 @@ RSpec/SubjectDeclaration: # new in 2.5
 RSpec/Rails/AvoidSetupHook: # new in 2.4
   Enabled: true
 RSpec/ImplicitSubject:
+  Enabled: false
+# new configurations since rubocop 1.50.0
+RSpec/NoExpectationExample:
   Enabled: false
