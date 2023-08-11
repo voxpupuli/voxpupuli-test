@@ -7,6 +7,9 @@ require:
 AllCops:
   # Puppet agent 6 ships with ruby 2.5.  Puppetserver 6 uses JRuby 9.2.x (Ruby 2.5 compatible) since version 6.1.0.
   TargetRubyVersion: 2.5
+  DisplayCopNames: true
+  ExtraDetails: true
+  DisplayStyleGuide: true
   Include:
     - '**/*.rb'
   Exclude:
