@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v7.0.0](https://github.com/voxpupuli/voxpupuli-test/tree/v7.0.0) (2023-08-17)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v6.0.0...v7.0.0)
+
+**Breaking changes:**
+
+- Rubocop: Update 1.28.2-\>1.50.0; requires Ruby 2.6 [\#115](https://github.com/voxpupuli/voxpupuli-test/pull/115) ([bastelfreak](https://github.com/bastelfreak))
+- always mock trusted/server facts [\#114](https://github.com/voxpupuli/voxpupuli-test/pull/114) ([bastelfreak](https://github.com/bastelfreak))
+- Rubocop: Update 1.22.3-\>1.28.3 [\#91](https://github.com/voxpupuli/voxpupuli-test/pull/91) ([bastelfreak](https://github.com/bastelfreak))
+
+**Implemented enhancements:**
+
+- Gemfile: Allow Puppet 8 [\#116](https://github.com/voxpupuli/voxpupuli-test/pull/116) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [v6.0.0](https://github.com/voxpupuli/voxpupuli-test/tree/v6.0.0) (2023-05-05)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v5.7.0...v6.0.0)
