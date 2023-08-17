@@ -31,9 +31,10 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'rspec-puppet-utils', '~> 3.4'
 
   # Rubocop
-  # newest versions that still support Ruby 2.5
-  s.add_runtime_dependency 'rubocop', '~> 1.28.2'
-  s.add_runtime_dependency 'rubocop-rspec', '~> 2.10.0'
+  # newest versions that still support Ruby 2.6
+  # jruby 9.3 in Puppetserver 7 is compatible with C Ruby 2.6
+  s.add_runtime_dependency 'rubocop', '~> 1.50.0'
+  s.add_runtime_dependency 'rubocop-rspec', '~> 2.20.0'
   s.add_runtime_dependency 'rubocop-rake', '~> 0.6.0'
 
   # Linting
