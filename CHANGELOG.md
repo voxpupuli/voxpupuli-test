@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v7.0.1](https://github.com/voxpupuli/voxpupuli-test/tree/v7.0.1) (2023-10-11)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v7.0.0...v7.0.1)
+
+**Merged pull requests:**
+
+- rspec-puppet: Update 3.x to 4.x & metadata-json-lint: Update 3.x to 4.x [\#118](https://github.com/voxpupuli/voxpupuli-test/pull/118) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [v7.0.0](https://github.com/voxpupuli/voxpupuli-test/tree/v7.0.0) (2023-08-17)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v6.0.0...v7.0.0)
