@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
 
   # Testing
   s.add_runtime_dependency 'facterdb', '>= 1.4.0', '< 2'
-  s.add_runtime_dependency 'metadata-json-lint', '~> 3.0', '>= 3.0.3'
+  s.add_runtime_dependency 'metadata-json-lint', '~> 4.0'
   s.add_runtime_dependency 'parallel_tests', '~> 4.2'
   # 4.0.0 provides rubocop annotations in GitHub Actions
   # 5.0.0 supports the validation of REFERENCE.md
