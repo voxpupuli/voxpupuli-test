@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v7.0.2](https://github.com/voxpupuli/voxpupuli-test/tree/v7.0.2) (2023-10-11)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v7.0.1...v7.0.2)
+
+**Fixed bugs:**
+
+- dont set trusted\_node\_data/trusted\_server\_facts [\#120](https://github.com/voxpupuli/voxpupuli-test/pull/120) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [v7.0.1](https://github.com/voxpupuli/voxpupuli-test/tree/v7.0.1) (2023-10-11)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v7.0.0...v7.0.1)
