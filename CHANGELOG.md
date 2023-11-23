@@ -2,7 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
-## [v7.0.2](https://github.com/voxpupuli/voxpupuli-test/tree/v7.0.2) (2023-10-11)
+## [v7.1.0](https://github.com/voxpupuli/voxpupuli-test/tree/v7.1.0) (2023-11-23)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v7.0.2...v7.1.0)
+
+**Implemented enhancements:**
+
+- puppetlabs\_spec\_helper: Require 7.x [\#122](https://github.com/voxpupuli/voxpupuli-test/pull/122) ([bastelfreak](https://github.com/bastelfreak))
+
+## [v7.0.2](https://github.com/voxpupuli/voxpupuli-test/tree/v7.0.2) (2023-10-12)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v7.0.1...v7.0.2)
 
