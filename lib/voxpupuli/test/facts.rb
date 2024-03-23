@@ -51,7 +51,9 @@ def add_facts_for_metadata(metadata)
   metadata['dependencies'].each do |dependency|
     case normalize_module_name(dependency['name'])
     when 'camptocamp/systemd', 'puppet/systemd'
-      add_custom_fact :systemd, ->(_os, facts) { facts['service_provider'] == 'systemd' }
+      add_custom_fact :systemd, ->(_os, facts) do
+        (RSpec.configuration.facterdb_string_keys ? facts['service_provider'] : facts[:service_provider]) == 'systemd'
+      end
     when 'puppetlabs/stdlib'
       add_stdlib_facts
     end
