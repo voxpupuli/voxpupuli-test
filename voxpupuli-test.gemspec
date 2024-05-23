@@ -20,9 +20,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'facterdb', '>= 1.4.0', '< 2'
   s.add_runtime_dependency 'metadata-json-lint', '~> 4.0'
   s.add_runtime_dependency 'parallel_tests', '~> 4.2'
-  # 4.0.0 provides rubocop annotations in GitHub Actions
-  # 5.0.0 supports the validation of REFERENCE.md
-  s.add_runtime_dependency 'puppetlabs_spec_helper', '~> 7.0', '>= 7.0.1'
+  s.add_runtime_dependency 'puppetlabs_spec_helper', '~> 7.3'
   # lazy dependency of the `validate` task. Will check the REFERENCE.md
   # 3.0.0 and later require Ruby 2.7
   s.add_runtime_dependency 'puppet-strings', '~> 4.0'
