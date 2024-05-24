@@ -17,3 +17,13 @@ begin
 rescue LoadError
   # Optional gem, release group is probably disabled
 end
+
+# this is identical to our config in voxpupuli-rubocop, but that gem targets Ruby 2.7
+# and voxupuli-test depends on an older rubocop version because we provide it for our modules
+require 'rubocop/rake_task'
+RuboCop::RakeTask.new(:rubocop) do |task|
+  # These make the rubocop experience maybe slightly less terrible
+  task.options = ['--display-cop-names', '--display-style-guide', '--extra-details']
+  # Use Rubocop's Github Actions formatter if possible
+  task.formatters << 'github' if ENV['GITHUB_ACTIONS'] == 'true'
+end
