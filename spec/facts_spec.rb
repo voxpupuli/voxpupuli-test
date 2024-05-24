@@ -134,7 +134,7 @@ describe 'add_facts_for_metadata' do
         facts = RspecPuppetFacts.with_custom_facts('redhat-7-x86_64', {
           os: { 'family' => 'RedHat', 'release' => { 'major' => '7' } }
         })
-        expect(facts['systemd']).to be true
+        expect(facts[:systemd]).to be true
       end
 
       it 'has no systemd on Red Hat 6' do
@@ -142,7 +142,7 @@ describe 'add_facts_for_metadata' do
         facts = RspecPuppetFacts.with_custom_facts('redhat-6-x86_64', {
           os: {'family' => 'RedHat', 'release' => { 'major' => '6' }}
         })
-        expect(facts['systemd']).to be false
+        expect(facts[:systemd]).to be false
       end
 
       it 'has no systemd on openbsd' do
@@ -150,7 +150,7 @@ describe 'add_facts_for_metadata' do
         facts = RspecPuppetFacts.with_custom_facts('openbsd-6.4-x86_64', {
           os: { 'family' => 'OpenBSD' }
         })
-        expect(facts['systemd']).to be false
+        expect(facts[:systemd]).to be false
       end
     end
   end
