@@ -17,6 +17,8 @@ RSpec.configure do |config|
   # and 7.12+ and requires rspec-puppet 2.11.0+.
   config.facter_implementation = 'rspec'
 
+  config.facterdb_string_keys = true
+
   config.after(:suite) do
     RSpec::Puppet::Coverage.report!
   end
