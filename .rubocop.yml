@@ -1,0 +1,38 @@
+---
+require:
+  - rubocop-rake
+  - rubocop-rspec
+
+# this alligns with our settings in voxpupuli-rubocop
+# but we cannot depend on that because it pulls in newer rubocop versions,
+# which would break our modules on legacy puppetserver
+AllCops:
+  NewCops: enable
+  DisplayCopNames: true
+  ExtraDetails: true
+  DisplayStyleGuide: true
+
+# this currently doesn't work with the way we handle our secrets
+Gemspec/RequireMFA:
+  Enabled: false
+
+# Vox Pupuli default is to use `add_development_dependency` in the gemspec
+Gemspec/DevelopmentDependencies:
+  Enabled: false
+
+Style/TernaryParentheses:
+  EnforcedStyle: require_parentheses_when_complex
+
+Style/TrailingCommaInHashLiteral:
+  Enabled: true
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInArrayLiteral:
+  Enabled: true
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInArguments:
+  Enabled: true
+  EnforcedStyleForMultiline: comma
+
+inherit_from: .rubocop_todo.yml
