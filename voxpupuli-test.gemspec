@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description = 'A package that depends on all the gems Vox Pupuli modules need and methods to simplify spec helpers'
   s.licenses    = 'Apache-2.0'
 
-  s.files       = Dir['lib/**/*.rb', 'rubocop.yml']
+  s.files       = Dir['lib/**/*.rb', 'rubocop.yml', 'LICENSE', 'README.md']
 
   s.required_ruby_version = '>= 2.7.0'
 
