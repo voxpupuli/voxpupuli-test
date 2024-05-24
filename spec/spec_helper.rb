@@ -23,3 +23,4 @@ else
 end
 
 require 'rspec/core'
+require 'voxpupuli/test/spec_helper'

@@ -51,7 +51,9 @@ def add_facts_for_metadata(metadata)
   metadata['dependencies'].each do |dependency|
     case normalize_module_name(dependency['name'])
     when 'camptocamp/systemd', 'puppet/systemd'
-      add_custom_fact :systemd, ->(_os, facts) { facts['service_provider'] == 'systemd' }
+      add_custom_fact :systemd, ->(_os, facts) do
+        (RSpec.configuration.facterdb_string_keys ? facts['service_provider'] : facts[:service_provider]) == 'systemd'
+      end
     when 'puppetlabs/stdlib'
       add_stdlib_facts
     end
@@ -70,9 +72,8 @@ def add_stdlib_facts
 
   # Rough conversion of grepping in the puppet source:
   # grep defaultfor lib/puppet/provider/service/*.rb
-  add_custom_fact :service_provider, ->(_os, facts) do
-    os = RSpec.configuration.facterdb_string_keys ? facts['os'] : facts[:os]
-    case os['family'].downcase
+  add_custom_fact 'service_provider', ->(_os, facts) do
+    case facts[:os]['family'].downcase
     when 'archlinux'
       'systemd'
     when 'darwin'
@@ -86,9 +87,9 @@ def add_stdlib_facts
     when 'openbsd'
       'openbsd'
     when 'redhat'
-      os['release']['major'].to_i >= 7 ? 'systemd' : 'redhat'
+      facts[:os]['release']['major'].to_i >= 7 ? 'systemd' : 'redhat'
     when 'suse'
-      os['release']['major'].to_i >= 12 ? 'systemd' : 'redhat'
+      facts[:os]['release']['major'].to_i >= 12 ? 'systemd' : 'redhat'
     when 'windows'
       'windows'
     else

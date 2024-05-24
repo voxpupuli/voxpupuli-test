@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'voxpupuli/test/facts'
 
 describe 'override_facts' do
   let(:base_facts) do
@@ -132,7 +131,7 @@ describe 'add_facts_for_metadata' do
       it 'has systemd on Red Hat 7' do
         add_facts_for_metadata(metadata)
         facts = RspecPuppetFacts.with_custom_facts('redhat-7-x86_64', {
-          os: { 'family' => 'RedHat', 'release' => { 'major' => '7' } }
+          'os' => { 'family' => 'RedHat', 'release' => { 'major' => '7' } }
         })
         expect(facts['systemd']).to be true
       end
@@ -140,7 +139,7 @@ describe 'add_facts_for_metadata' do
       it 'has no systemd on Red Hat 6' do
         add_facts_for_metadata(metadata)
         facts = RspecPuppetFacts.with_custom_facts('redhat-6-x86_64', {
-          os: {'family' => 'RedHat', 'release' => { 'major' => '6' }}
+          'os' => {'family' => 'RedHat', 'release' => { 'major' => '6' }}
         })
         expect(facts['systemd']).to be false
       end
@@ -148,7 +147,7 @@ describe 'add_facts_for_metadata' do
       it 'has no systemd on openbsd' do
         add_facts_for_metadata(metadata)
         facts = RspecPuppetFacts.with_custom_facts('openbsd-6.4-x86_64', {
-          os: { 'family' => 'OpenBSD' }
+          'os' => { 'family' => 'OpenBSD' }
         })
         expect(facts['systemd']).to be false
       end
