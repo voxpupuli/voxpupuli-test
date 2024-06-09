@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'voxpupuli/test/facts'
 
 describe 'override_facts' do
   let(:base_facts) do
