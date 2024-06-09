@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'rspec-puppet-facts', git: 'https://github.com/bastelfreak/rspec-puppet-facts', branch: 'foobaz'
+
 gemspec
 
 group :release do
