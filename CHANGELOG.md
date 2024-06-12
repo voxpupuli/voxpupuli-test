@@ -2,12 +2,29 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v8.0.0](https://github.com/voxpupuli/voxpupuli-test/tree/v8.0.0) (2024-06-12)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v7.2.0...v8.0.0)
+
+**Breaking changes:**
+
+- rspec-puppet-facts: Require 4.x; add custom facts as strings  [\#135](https://github.com/voxpupuli/voxpupuli-test/pull/135) ([bastelfreak](https://github.com/bastelfreak))
+
+**Fixed bugs:**
+
+- Use our spec\_helper for tests [\#133](https://github.com/voxpupuli/voxpupuli-test/pull/133) ([bastelfreak](https://github.com/bastelfreak))
+
+**Merged pull requests:**
+
+- gem build: include README.md+LICENSE [\#129](https://github.com/voxpupuli/voxpupuli-test/pull/129) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [v7.2.0](https://github.com/voxpupuli/voxpupuli-test/tree/v7.2.0) (2024-05-23)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v7.1.0...v7.2.0)
 
 **Implemented enhancements:**
 
+- Add Ruby 3.3 to CI matrix [\#128](https://github.com/voxpupuli/voxpupuli-test/pull/128) ([bastelfreak](https://github.com/bastelfreak))
 - puppetlabs\_spec\_helper: Require 7.3 [\#126](https://github.com/voxpupuli/voxpupuli-test/pull/126) ([bastelfreak](https://github.com/bastelfreak))
 
 ## [v7.1.0](https://github.com/voxpupuli/voxpupuli-test/tree/v7.1.0) (2023-11-23)
