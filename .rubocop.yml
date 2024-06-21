@@ -35,4 +35,7 @@ Style/TrailingCommaInArguments:
   Enabled: true
   EnforcedStyleForMultiline: comma
 
+Style/IfUnlessModifier:
+  Enabled: false
+
 inherit_from: .rubocop_todo.yml
