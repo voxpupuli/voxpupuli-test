@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rspec-puppet-facts'
 include RspecPuppetFacts
 
@@ -60,6 +62,7 @@ end
 
 def normalize_module_name(name)
   return unless name
+
   name.sub('-', '/')
 end
 
@@ -70,7 +73,7 @@ def add_stdlib_facts
 
   # Rough conversion of grepping in the puppet source:
   # grep defaultfor lib/puppet/provider/service/*.rb
-  add_custom_fact :service_provider, ->(_os, facts) do
+  add_custom_fact :service_provider, lambda { |_os, facts|
     os = RSpec.configuration.facterdb_string_keys ? facts['os'] : facts[:os]
     case os['family'].downcase
     when 'archlinux', 'debian', 'redhat'
@@ -84,11 +87,11 @@ def add_stdlib_facts
     when 'openbsd'
       'openbsd'
     when 'suse'
-      os['release']['major'].to_i >= 12 ? 'systemd' : 'redhat'
+      (os['release']['major'].to_i >= 12) ? 'systemd' : 'redhat'
     when 'windows'
       'windows'
     else
       'init'
     end
-  end
+  }
 end
