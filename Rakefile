@@ -15,4 +15,5 @@ begin
     config.future_release = "v#{Gem::Specification.load("#{config.project}.gemspec").version}"
   end
 rescue LoadError
+  # Optional gem, release group is probably disabled
 end
