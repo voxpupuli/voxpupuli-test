@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'puppetlabs_spec_helper/rake_tasks'
 
 PuppetLint.configuration.log_format = '%<path>s:%<line>s:%<check>s:%<KIND>s:%<message>s'
