@@ -73,20 +73,16 @@ def add_stdlib_facts
   add_custom_fact :service_provider, ->(_os, facts) do
     os = RSpec.configuration.facterdb_string_keys ? facts['os'] : facts[:os]
     case os['family'].downcase
-    when 'archlinux'
+    when 'archlinux', 'debian', 'redhat'
       'systemd'
     when 'darwin'
       'launchd'
-    when 'debian'
-      'systemd'
     when 'freebsd'
       'freebsd'
     when 'gentoo'
       'openrc'
     when 'openbsd'
       'openbsd'
-    when 'redhat'
-      'systemd'
     when 'suse'
       os['release']['major'].to_i >= 12 ? 'systemd' : 'redhat'
     when 'windows'
