@@ -23,7 +23,7 @@ namespace :check do
       end
     end
 
-    unless errors.empty?
+    if errors.any?
       errors.each { |error| puts error }
       exit 1
     end
