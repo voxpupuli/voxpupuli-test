@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v8.1.0](https://github.com/voxpupuli/voxpupuli-test/tree/v8.1.0) (2024-07-05)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v8.0.0...v8.1.0)
+
+**Implemented enhancements:**
+
+- feat\(check:trailing\_whitespace\):  collect all problems, report and then exit [\#141](https://github.com/voxpupuli/voxpupuli-test/pull/141) ([rwaffen](https://github.com/rwaffen))
+- Add rubocop config [\#130](https://github.com/voxpupuli/voxpupuli-test/pull/130) ([bastelfreak](https://github.com/bastelfreak))
+
+**Merged pull requests:**
+
+- Document the trailing\_whitespace rake task in the README [\#142](https://github.com/voxpupuli/voxpupuli-test/pull/142) ([rwaffen](https://github.com/rwaffen))
+- Remove redundant mock\_with default to rspec [\#138](https://github.com/voxpupuli/voxpupuli-test/pull/138) ([ekohl](https://github.com/ekohl))
+- Merge duplicate branches in service\_provider fact [\#137](https://github.com/voxpupuli/voxpupuli-test/pull/137) ([ekohl](https://github.com/ekohl))
+
 ## [v8.0.0](https://github.com/voxpupuli/voxpupuli-test/tree/v8.0.0) (2024-06-12)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v7.2.0...v8.0.0)
