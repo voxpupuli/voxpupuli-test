@@ -9,7 +9,8 @@
 
 This is a helper Gem to test the various Vox Pupuli Puppet modules. This Gem provides common functionality for rspec-puppet based testing. The aim is to reduce the boiler plate and need for modulesync.
 
-# Usage
+## Usage
+
 Add the `voxpupuli-test` Gem to your `Gemfile`:
 
 ```ruby
@@ -35,7 +36,17 @@ inherit_gem:
   voxpupuli-test: rubocop.yml
 ```
 
-# Fact handling
+## Rake tasks
+
+### `check:trailing_whitespace`
+
+The rake task `check:trailing_whitespace` checks for trailing whitespace in all markdown files in the repository.
+It has an exclude pattern for: `%r{^((modules|acceptance|\.?vendor|spec/fixtures|pkg)/|REFERENCE.md)}`
+
+We recommend using the GitHub style guide for markdown files, which includes no trailing whitespace.
+See [GitHub Markdown Style Guide](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+## Fact handling
 
 The recommended method is using [rspec-puppet-facts](https://github.com/mcanevet/rspec-puppet-facts) and is set up by default. This means the tests are writting as follows:
 
