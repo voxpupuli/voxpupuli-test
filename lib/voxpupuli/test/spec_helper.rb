@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'voxpupuli/test/facts'
 require 'puppetlabs_spec_helper/module_spec_helper'
 
