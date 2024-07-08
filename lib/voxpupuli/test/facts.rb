@@ -53,7 +53,11 @@ def add_facts_for_metadata(metadata)
   metadata['dependencies'].each do |dependency|
     case normalize_module_name(dependency['name'])
     when 'camptocamp/systemd', 'puppet/systemd'
-      add_custom_fact :systemd, ->(_os, facts) { facts[:service_provider] == 'systemd' }
+      if RSpec.configuration.facterdb_string_keys
+        add_custom_fact 'systemd', ->(_os, facts) { facts['service_provider'] == 'systemd' }
+      else
+        add_custom_fact :systemd, ->(_os, facts) { facts[:service_provider] == 'systemd' }
+      end
     when 'puppetlabs/stdlib'
       add_stdlib_facts
     end
@@ -67,13 +71,20 @@ def normalize_module_name(name)
 end
 
 def add_stdlib_facts
-  add_custom_fact :puppet_environmentpath, '/etc/puppetlabs/code/environments'
-  add_custom_fact :puppet_vardir, '/opt/puppetlabs/puppet/cache'
-  add_custom_fact :root_home, '/root'
+  if RSpec.configuration.facterdb_string_keys
+    add_custom_fact 'puppet_environmentpath', '/etc/puppetlabs/code/environments'
+    add_custom_fact 'puppet_vardir', '/opt/puppetlabs/puppet/cache'
+    add_custom_fact 'root_home', '/root'
+  else
+    add_custom_fact :puppet_environmentpath, '/etc/puppetlabs/code/environments'
+    add_custom_fact :puppet_vardir, '/opt/puppetlabs/puppet/cache'
+    add_custom_fact :root_home, '/root'
+  end
 
   # Rough conversion of grepping in the puppet source:
   # grep defaultfor lib/puppet/provider/service/*.rb
-  add_custom_fact :service_provider, lambda { |_os, facts|
+  service_provider = RSpec.configuration.facterdb_string_keys ? 'service_provider' : :service_provider
+  add_custom_fact service_provider, lambda { |_os, facts|
     os = RSpec.configuration.facterdb_string_keys ? facts['os'] : facts[:os]
     case os['family'].downcase
     when 'archlinux', 'debian', 'redhat'
