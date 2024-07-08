@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'rake', '~> 13.0', '>= 13.0.6'
 
   # Testing
-  s.add_runtime_dependency 'facterdb', '~> 2.1'
+  s.add_runtime_dependency 'facterdb', '~> 3.1'
   s.add_runtime_dependency 'metadata-json-lint', '~> 4.0'
   s.add_runtime_dependency 'parallel_tests', '~> 4.2'
   s.add_runtime_dependency 'puppetlabs_spec_helper', '~> 7.3'
@@ -25,7 +25,7 @@ Gem::Specification.new do |s|
   # 3.0.0 and later require Ruby 2.7
   s.add_runtime_dependency 'puppet-strings', '~> 4.0'
   s.add_runtime_dependency 'rspec-puppet', '~> 4.0'
-  s.add_runtime_dependency 'rspec-puppet-facts', '~> 4.0'
+  s.add_runtime_dependency 'rspec-puppet-facts', '~> 5.0'
   s.add_runtime_dependency 'rspec-puppet-utils', '~> 3.4'
 
   # Rubocop
