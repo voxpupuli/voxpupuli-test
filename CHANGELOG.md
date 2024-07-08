@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v9.0.0](https://github.com/voxpupuli/voxpupuli-test/tree/v9.0.0) (2024-07-08)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v8.1.0...v9.0.0)
+
+**Breaking changes:**
+
+- require rspec-puppet-facts 5.x; drop legacy facts support [\#132](https://github.com/voxpupuli/voxpupuli-test/pull/132) ([bastelfreak](https://github.com/bastelfreak))
+
+**Fixed bugs:**
+
+- custom facts: Honour stringified facts [\#144](https://github.com/voxpupuli/voxpupuli-test/pull/144) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [v8.1.0](https://github.com/voxpupuli/voxpupuli-test/tree/v8.1.0) (2024-07-05)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v8.0.0...v8.1.0)
