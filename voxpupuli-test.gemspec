@@ -24,7 +24,7 @@ Gem::Specification.new do |s|
   # lazy dependency of the `validate` task. Will check the REFERENCE.md
   # 3.0.0 and later require Ruby 2.7
   s.add_runtime_dependency 'puppet-strings', '~> 4.0'
-  s.add_runtime_dependency 'rspec-puppet', '~> 4.0'
+  s.add_runtime_dependency 'rspec-puppet', '~> 5.0'
   s.add_runtime_dependency 'rspec-puppet-facts', '~> 5.0'
   s.add_runtime_dependency 'rspec-puppet-utils', '~> 3.4'
 
