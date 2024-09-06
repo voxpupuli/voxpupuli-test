@@ -7,7 +7,9 @@
 [![RubyGem Version](https://img.shields.io/gem/v/voxpupuli-test.svg)](https://rubygems.org/gems/voxpupuli-test)
 [![RubyGem Downloads](https://img.shields.io/gem/dt/voxpupuli-test.svg)](https://rubygems.org/gems/voxpupuli-test)
 
-This is a helper Gem to test the various Vox Pupuli Puppet modules. This Gem provides common functionality for rspec-puppet based testing. The aim is to reduce the boiler plate and need for modulesync.
+This is a helper Gem to test the various Vox Pupuli Puppet modules.
+This Gem provides common functionality for rspec-puppet based testing and static code analysis.
+The aim is to reduce the boiler plate and need for modulesync.
 
 ## Usage
 
@@ -34,6 +36,43 @@ In your `.rubocop.yml` (see [Rubocop's documentation](https://docs.rubocop.org/r
 ```yaml
 inherit_gem:
   voxpupuli-test: rubocop.yml
+```
+
+To run the linter, the syntax checker and the unit tests:
+
+```sh
+bundle exec rake test
+```
+
+To run your all the unit tests:
+
+```sh
+bundle exec rake spec
+```
+
+To run a specific spec test set the `SPEC` variable:
+
+```sh
+SPEC=spec/classes/foo_spec.rb bundle exec rake spec
+```
+
+To run all the static code analysis and linting:
+
+```sh
+bundle exec rake validate lint check rubocop
+```
+
+
+To autocorrect Puppet files:
+
+```sh
+bundle exec rake lint_fix
+```
+
+To autocorrect Ruby files:
+
+```sh
+bundle exec rake rubocop:autocorrect
 ```
 
 ## Rake tasks
