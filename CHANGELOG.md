@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v9.1.0](https://github.com/voxpupuli/voxpupuli-test/tree/v9.1.0) (2024-09-06)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v9.0.0...v9.1.0)
+
+**Implemented enhancements:**
+
+- rspec-puppet: Require 5.x [\#146](https://github.com/voxpupuli/voxpupuli-test/pull/146) ([bastelfreak](https://github.com/bastelfreak))
+
+**Merged pull requests:**
+
+- README.md: Document how to use voxpupuli-test [\#147](https://github.com/voxpupuli/voxpupuli-test/pull/147) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [v9.0.0](https://github.com/voxpupuli/voxpupuli-test/tree/v9.0.0) (2024-07-08)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v8.1.0...v9.0.0)
