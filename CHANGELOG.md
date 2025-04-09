@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v9.2.1](https://github.com/voxpupuli/voxpupuli-test/tree/v9.2.1) (2025-04-09)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v9.2.0...v9.2.1)
+
+**Fixed bugs:**
+
+- Add syslog gem as dependency [\#151](https://github.com/voxpupuli/voxpupuli-test/pull/151) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [v9.2.0](https://github.com/voxpupuli/voxpupuli-test/tree/v9.2.0) (2024-10-08)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v9.1.0...v9.2.0)
