@@ -18,6 +18,16 @@ RSpec.configure do |config|
   end
 end
 
+# Puppet 8 remove Legacy Facts and enable Strict Mode:
+# https://github.com/puppetlabs/puppet/wiki/Puppet-8-Compatibility#legacy-facts
+# https://github.com/puppetlabs/puppet/wiki/Puppet-8-Compatibility#strict-mode
+#
+# We want to use these settings as a common denominator for all versions of
+# Puppet with test modules against.
+Puppet[:include_legacy_facts] = false
+Puppet[:strict_variables] = true
+Puppet[:strict] = :error
+
 if ENV['DEBUG']
   Puppet::Util::Log.level = :debug
   Puppet::Util::Log.newdestination(:console)
