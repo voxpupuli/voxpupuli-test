@@ -20,10 +20,10 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'facterdb', '~> 3.1'
   s.add_runtime_dependency 'metadata-json-lint', '~> 4.0'
   s.add_runtime_dependency 'parallel_tests', '>= 4.2', '< 6'
-  s.add_runtime_dependency 'puppetlabs_spec_helper', '~> 8.0'
-  # lazy dependency of the `validate` task. Will check the REFERENCE.md
-  # 3.0.0 and later require Ruby 2.7
+  s.add_runtime_dependency 'puppet_fixtures', '~> 0.1', '>= 0.1.1'
+  s.add_runtime_dependency 'puppet-syntax', '~> 5.0'
   s.add_runtime_dependency 'puppet-strings', '~> 4.0'
+  s.add_runtime_dependency 'rspec-github', '>= 2.0', '< 4'
   s.add_runtime_dependency 'rspec-puppet', '~> 5.0'
   s.add_runtime_dependency 'rspec-puppet-facts', '~> 5.0'
   # puppet gem depends on syslog, but doesn't list it as explicit dependency

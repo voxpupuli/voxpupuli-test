@@ -2,7 +2,6 @@
 
 [![License](https://img.shields.io/github/license/voxpupuli/voxpupuli-test.svg)](https://github.com/voxpupuli/voxpupuli-test/blob/master/LICENSE)
 [![Test](https://github.com/voxpupuli/voxpupuli-test/actions/workflows/test.yml/badge.svg)](https://github.com/voxpupuli/voxpupuli-test/actions/workflows/test.yml)
-[![codecov](https://codecov.io/gh/voxpupuli/voxpupuli-test/branch/master/graph/badge.svg?token=Mypkl78hvK)](https://codecov.io/gh/voxpupuli/voxpupuli-test)
 [![Release](https://github.com/voxpupuli/voxpupuli-test/actions/workflows/release.yml/badge.svg)](https://github.com/voxpupuli/voxpupuli-test/actions/workflows/release.yml)
 [![RubyGem Version](https://img.shields.io/gem/v/voxpupuli-test.svg)](https://rubygems.org/gems/voxpupuli-test)
 [![RubyGem Downloads](https://img.shields.io/gem/dt/voxpupuli-test.svg)](https://rubygems.org/gems/voxpupuli-test)
