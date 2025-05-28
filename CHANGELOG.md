@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v10.0.0](https://github.com/voxpupuli/voxpupuli-test/tree/v10.0.0) (2025-05-28)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v9.2.1...v10.0.0)
+
+**Breaking changes:**
+
+- Drop rspec-puppet-utils [\#154](https://github.com/voxpupuli/voxpupuli-test/pull/154) ([bastelfreak](https://github.com/bastelfreak))
+- Replace PSH with puppet\_fixtures [\#153](https://github.com/voxpupuli/voxpupuli-test/pull/153) ([bastelfreak](https://github.com/bastelfreak))
+
+**Implemented enhancements:**
+
+- parallel\_tests: Allow 5.x [\#155](https://github.com/voxpupuli/voxpupuli-test/pull/155) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [v9.2.1](https://github.com/voxpupuli/voxpupuli-test/tree/v9.2.1) (2025-04-09)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v9.2.0...v9.2.1)
