@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   # Testing
   s.add_runtime_dependency 'facterdb', '~> 3.1'
   s.add_runtime_dependency 'metadata-json-lint', '~> 4.0'
-  s.add_runtime_dependency 'parallel_tests', '~> 4.2'
+  s.add_runtime_dependency 'parallel_tests', '>= 4.2', '< 6'
   s.add_runtime_dependency 'puppetlabs_spec_helper', '~> 8.0'
   # lazy dependency of the `validate` task. Will check the REFERENCE.md
   # 3.0.0 and later require Ruby 2.7
