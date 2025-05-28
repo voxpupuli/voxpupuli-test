@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v10.0.1](https://github.com/voxpupuli/voxpupuli-test/tree/v10.0.1) (2025-05-28)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v10.0.0...v10.0.1)
+
+**Fixed bugs:**
+
+- Correctly call sh\(\) when validating Ruby files [\#157](https://github.com/voxpupuli/voxpupuli-test/pull/157) ([ekohl](https://github.com/ekohl))
+
 ## [v10.0.0](https://github.com/voxpupuli/voxpupuli-test/tree/v10.0.0) (2025-05-28)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v9.2.1...v10.0.0)
