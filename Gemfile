@@ -11,3 +11,6 @@ end
 
 # Override gemspec for CI matrix builds.
 gem 'puppet', ENV.fetch('PUPPET_VERSION', '>= 7.24'), require: false
+
+gem 'openvox-strings', github: 'voxpupuli/openvox-strings', branch: 'openvox'
+gem 'puppet-syntax', github: 'bastelfreak/puppet-syntax', branch: 'openvox'
