@@ -7,7 +7,7 @@ require 'rake' # provides `sh` method
 namespace :validate do
   desc 'Validate all .rb files'
   task :ruby do
-    Dir['lib/**/*.rb'].each do |lib_file|
+    Dir['lib/**/*.rb', 'tasks/**/*.rb'].each do |lib_file|
       sh 'ruby', '-c', lib_file
     end
   end
