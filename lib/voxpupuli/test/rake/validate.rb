@@ -2,6 +2,7 @@
 
 require 'metadata-json-lint/rake_task'
 require 'puppet-strings/tasks'
+require 'rake' # provides `sh` method
 
 namespace :validate do
   desc 'Validate all .rb files'
