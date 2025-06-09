@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v10.1.0](https://github.com/voxpupuli/voxpupuli-test/tree/v10.1.0) (2025-06-09)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v10.0.1...v10.1.0)
+
+**Implemented enhancements:**
+
+- Allow for new version of puppet-strings [\#163](https://github.com/voxpupuli/voxpupuli-test/pull/163) ([ghoneycutt](https://github.com/ghoneycutt))
+- validate:ruby: Validate Ruby tasks [\#159](https://github.com/voxpupuli/voxpupuli-test/pull/159) ([bastelfreak](https://github.com/bastelfreak))
+
+**Fixed bugs:**
+
+- validate rake task: Add missing rake dependency [\#160](https://github.com/voxpupuli/voxpupuli-test/pull/160) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [v10.0.1](https://github.com/voxpupuli/voxpupuli-test/tree/v10.0.1) (2025-05-28)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v10.0.0...v10.0.1)
