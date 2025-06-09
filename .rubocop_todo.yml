@@ -19,7 +19,7 @@ Metrics/CyclomaticComplexity:
 # Offense count: 2
 # Configuration parameters: CountComments, CountAsOne, AllowedMethods, AllowedPatterns.
 Metrics/MethodLength:
-  Max: 31
+  Max: 129
 
 # Offense count: 1
 # Configuration parameters: Prefixes, AllowedPatterns.
@@ -69,4 +69,4 @@ Style/MixinUsage:
 # Configuration parameters: AllowHeredoc, AllowURI, URISchemes, IgnoreCopDirectives, AllowedPatterns.
 # URISchemes: http, https
 Layout/LineLength:
-  Max: 136
+  Max: 160
