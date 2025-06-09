@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'metadata-json-lint', '~> 4.0'
   s.add_runtime_dependency 'parallel_tests', '>= 4.2', '< 6'
   s.add_runtime_dependency 'puppet_fixtures', '~> 0.1', '>= 0.1.1'
-  s.add_runtime_dependency 'puppet-strings', '~> 4.0'
+  s.add_runtime_dependency 'puppet-strings', '>= 4.0.0', '< 6.0.0'
   s.add_runtime_dependency 'puppet-syntax', '~> 5.0'
   s.add_runtime_dependency 'rspec-github', '>= 2.0', '< 4'
   s.add_runtime_dependency 'rspec-puppet', '~> 5.0'
