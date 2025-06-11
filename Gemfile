@@ -10,4 +10,4 @@ group :release, optional: true do
 end
 
 # Override gemspec for CI matrix builds.
-gem 'puppet', ENV.fetch('PUPPET_VERSION', '>= 7.24'), require: false
+gem 'openvox', ENV.fetch('OPENVOX_VERSION', '>= 7.24'), require: false

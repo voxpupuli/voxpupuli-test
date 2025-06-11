@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'metadata-json-lint/rake_task'
-require 'puppet-strings/tasks'
+require 'openvox-strings/tasks'
 require 'rake' # provides `sh` method
 
 namespace :validate do

@@ -32,17 +32,17 @@ jobs:
           - "3.1"
           - "3.0"
           - "2.7"
-        puppet:
+        openvox:
           - "~> 8.0"
           - "~> 7.24"
         exclude:
           - ruby: "3.0"
-            puppet: "~> 8.0"
+            openvox: "~> 8.0"
           - ruby: "2.7"
-            puppet: "~> 8.0"
-    name: "Ruby ${{ matrix.ruby }} - Puppet ${{ matrix.puppet }}"
+            openvox: "~> 8.0"
+    name: "Ruby ${{ matrix.ruby }} - OpenVox ${{ matrix.openvox }}"
     env:
-      PUPPET_VERSION: ${{ matrix.puppet }}
+      OPENVOX_VERSION: ${{ matrix.openvox }}
     steps:
       - uses: actions/checkout@v3
       - name: Install Ruby ${{ matrix.ruby }}
