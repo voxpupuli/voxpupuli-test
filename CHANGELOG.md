@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v11.0.0](https://github.com/voxpupuli/voxpupuli-test/tree/v11.0.0) (2025-06-11)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v10.1.0...v11.0.0)
+
+**Breaking changes:**
+
+- Switch from puppet to openvox [\#162](https://github.com/voxpupuli/voxpupuli-test/pull/162) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [v10.1.0](https://github.com/voxpupuli/voxpupuli-test/tree/v10.1.0) (2025-06-09)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v10.0.1...v10.1.0)
