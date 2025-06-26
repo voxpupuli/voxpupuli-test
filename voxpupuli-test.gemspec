@@ -18,6 +18,7 @@ Gem::Specification.new do |s|
 
   # Testing
   s.add_runtime_dependency 'facterdb', '~> 3.1'
+  s.add_runtime_dependency 'json-schema', '~> 5.1'
   s.add_runtime_dependency 'metadata-json-lint', '~> 4.0'
   s.add_runtime_dependency 'openvox-strings', '~> 5.0'
   s.add_runtime_dependency 'parallel_tests', '>= 4.2', '< 6'
