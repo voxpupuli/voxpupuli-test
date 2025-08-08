@@ -34,7 +34,6 @@ jobs:
           - "2.7"
         openvox:
           - "~> 8.0"
-          - "~> 7.24"
         exclude:
           - ruby: "3.0"
             openvox: "~> 8.0"
