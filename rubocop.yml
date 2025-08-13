@@ -280,7 +280,7 @@ Style/PreferredHashMethods:
   Enabled: True
 
 Layout/DotPosition:
-  EnforcedStyle: trailing
+  EnforcedStyle: leading
 
 Style/DoubleNegation:
   Enabled: True
