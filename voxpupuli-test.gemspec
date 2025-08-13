@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'openvox-strings', '>= 5.0', '< 7'
   s.add_runtime_dependency 'parallel_tests', '>= 4.2', '< 6'
   s.add_runtime_dependency 'puppet_fixtures', '>= 0.1', '< 2'
-  s.add_runtime_dependency 'puppet-syntax', '~> 6.0'
+  s.add_runtime_dependency 'puppet-syntax', '>= 6.0', '< 8'
   s.add_runtime_dependency 'rspec-github', '>= 2.0', '< 4'
   s.add_runtime_dependency 'rspec-puppet', '~> 5.0'
   s.add_runtime_dependency 'rspec-puppet-facts', '~> 5.4'
