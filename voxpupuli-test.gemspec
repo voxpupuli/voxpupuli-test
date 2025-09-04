@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'rake', '~> 13.0', '>= 13.0.6'
 
   # Testing
-  s.add_runtime_dependency 'facterdb', '~> 3.1'
+  s.add_runtime_dependency 'facterdb', '>= 3.1', '< 5.0'
   s.add_runtime_dependency 'metadata-json-lint', '>= 4.0', '< 6'
   s.add_runtime_dependency 'openvox-strings', '>= 5.0', '< 7'
   s.add_runtime_dependency 'parallel_tests', '>= 4.2', '< 6'
