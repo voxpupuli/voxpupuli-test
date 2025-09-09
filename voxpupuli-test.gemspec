@@ -36,7 +36,7 @@ Gem::Specification.new do |s|
   # jruby 9.3 in Puppetserver 7 is compatible with C Ruby 2.6
   s.add_runtime_dependency 'rubocop', '~> 1.50.0'
   s.add_runtime_dependency 'rubocop-rake', '~> 0.6.0'
-  s.add_runtime_dependency 'rubocop-rspec', '>= 2.20', '< 3.8'
+  s.add_runtime_dependency 'rubocop-rspec', '~> 2.20.0'
 
   # Linting
   # meta gem to pull in all puppet-lint plugins + puppet-lint itself
