@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v12.0.0](https://github.com/voxpupuli/voxpupuli-test/tree/v12.0.0) (2025-09-23)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v11.1.0...v12.0.0)
+
+**Breaking changes:**
+
+- voxpupuli-puppet-lint-plugins: require 6.x [\#178](https://github.com/voxpupuli/voxpupuli-test/pull/178) ([kenyon](https://github.com/kenyon))
+- Drop OpenVox 7 testing [\#174](https://github.com/voxpupuli/voxpupuli-test/pull/174) ([bastelfreak](https://github.com/bastelfreak))
+
+**Implemented enhancements:**
+
+- Update facterdb requirement from ~\> 3.1 to \>= 3.1, \< 5.0 [\#180](https://github.com/voxpupuli/voxpupuli-test/pull/180) ([dependabot[bot]](https://github.com/apps/dependabot))
+- puppet-syntax: Allow 7.x [\#177](https://github.com/voxpupuli/voxpupuli-test/pull/177) ([bastelfreak](https://github.com/bastelfreak))
+- openvox-strings: Allow 6.x [\#176](https://github.com/voxpupuli/voxpupuli-test/pull/176) ([bastelfreak](https://github.com/bastelfreak))
+- metadata-json-lint: Allow 5.x [\#175](https://github.com/voxpupuli/voxpupuli-test/pull/175) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [v11.1.0](https://github.com/voxpupuli/voxpupuli-test/tree/v11.1.0) (2025-06-16)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v11.0.0...v11.1.0)
@@ -204,7 +220,6 @@ All notable changes to this project will be documented in this file.
 **Merged pull requests:**
 
 - CI: Add a dummy task github rules can depend on [\#102](https://github.com/voxpupuli/voxpupuli-test/pull/102) ([bastelfreak](https://github.com/bastelfreak))
-- Bump actions/checkout from 2 to 3 [\#96](https://github.com/voxpupuli/voxpupuli-test/pull/96) ([dependabot[bot]](https://github.com/apps/dependabot))
 - CI: Run on merges to master [\#95](https://github.com/voxpupuli/voxpupuli-test/pull/95) ([bastelfreak](https://github.com/bastelfreak))
 - dependabot: check for github actions and gems [\#94](https://github.com/voxpupuli/voxpupuli-test/pull/94) ([bastelfreak](https://github.com/bastelfreak))
 - Remove use of legacy facts [\#93](https://github.com/voxpupuli/voxpupuli-test/pull/93) ([alexjfisher](https://github.com/alexjfisher))
