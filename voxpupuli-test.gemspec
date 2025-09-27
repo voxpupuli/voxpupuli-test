@@ -25,7 +25,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'puppet-syntax', '>= 6.0', '< 8'
   s.add_runtime_dependency 'rspec-github', '>= 2.0', '< 4'
   s.add_runtime_dependency 'rspec-puppet', '~> 5.0'
-  s.add_runtime_dependency 'rspec-puppet-facts', '~> 5.4'
+  s.add_runtime_dependency 'rspec-puppet-facts', '>= 5.4', '< 7'
   # openvox gem depends on syslog, but doesn't list it as explicit dependency
   # until Ruby 3.4, syslog was part of MRI ruby core
   # https://github.com/OpenVoxProject/puppet/issues/90
