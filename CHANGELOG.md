@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v13.0.0](https://github.com/voxpupuli/voxpupuli-test/tree/v13.0.0) (2025-09-27)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v12.0.0...v13.0.0)
+
+**Breaking changes:**
+
+- voxpupuli-puppet-lint-plugins: Allow 7.x [\#190](https://github.com/voxpupuli/voxpupuli-test/pull/190) ([bastelfreak](https://github.com/bastelfreak))
+
+**Implemented enhancements:**
+
+- CI: Output bundle environment [\#192](https://github.com/voxpupuli/voxpupuli-test/pull/192) ([bastelfreak](https://github.com/bastelfreak))
+- rspec-puppet-facts: Allow 6.x [\#191](https://github.com/voxpupuli/voxpupuli-test/pull/191) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [v12.0.0](https://github.com/voxpupuli/voxpupuli-test/tree/v12.0.0) (2025-09-23)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v11.1.0...v12.0.0)
