@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v13.1.0](https://github.com/voxpupuli/voxpupuli-test/tree/v13.1.0) (2025-10-02)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v13.0.0...v13.1.0)
+
+**Implemented enhancements:**
+
+- puppet\_fixtures: Allow 3.x [\#194](https://github.com/voxpupuli/voxpupuli-test/pull/194) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [v13.0.0](https://github.com/voxpupuli/voxpupuli-test/tree/v13.0.0) (2025-09-27)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v12.0.0...v13.0.0)
