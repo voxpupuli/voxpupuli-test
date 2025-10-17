@@ -449,6 +449,9 @@ Naming/PredicatePrefix:
   Enabled: True
   AllowedMethods: ['is_a?', 'is_to_s']
 
+Naming/PredicateMethod:
+  Enabled: false
+
 Style/RedundantException:
   Enabled: True
 
