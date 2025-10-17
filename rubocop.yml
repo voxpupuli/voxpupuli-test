@@ -1,12 +1,12 @@
 # This is a shared config for easy consumption in other modules, without having
 # to sync over a large file
-require:
+plugins:
   - rubocop-rspec
   - rubocop-rake
 
 AllCops:
-  # Puppetserver 7 uses Jruby 9.3 which is compatible to C Ruby 2.6
-  TargetRubyVersion: 2.6
+  # OpenVox Server 8 uses Jruby which is compatible to MRI Ruby 3.1
+  TargetRubyVersion: 3.1
   DisplayCopNames: true
   ExtraDetails: true
   DisplayStyleGuide: true

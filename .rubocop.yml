@@ -1,5 +1,7 @@
 ---
-require:
+inherit_from: .rubocop_todo.yml
+
+plugins:
   - rubocop-rake
   - rubocop-rspec
 
@@ -41,4 +43,6 @@ Style/IfUnlessModifier:
 Metrics/BlockLength:
   Enabled: false
 
-inherit_from: .rubocop_todo.yml
+Layout/LineLength:
+  Enabled: true
+  Max: 140
