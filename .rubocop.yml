@@ -44,5 +44,4 @@ Metrics/BlockLength:
   Enabled: false
 
 Layout/LineLength:
-  Enabled: true
-  Max: 140
+  Enabled: false
