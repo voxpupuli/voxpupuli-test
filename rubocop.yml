@@ -557,7 +557,12 @@ Style/FormatStringToken:
 
 # This is useful, but sometimes a little too picky about where unit tests files
 # are located.
-RSpec/FilePath:
+
+# old cop: RSpec/FilePath
+RSpec/SpecFilePathFormat:
+  Enabled: false
+
+RSpec/SpecFilePathSuffix:
   Enabled: false
 
 # Leaving these enabled creates too much busy work
