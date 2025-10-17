@@ -445,7 +445,7 @@ Style/PercentLiteralDelimiters:
 Style/PerlBackrefs:
   Enabled: True
 
-Naming/PredicateName:
+Naming/PredicatePrefix:
   Enabled: True
   AllowedMethods: ['is_a?', 'is_to_s']
 
