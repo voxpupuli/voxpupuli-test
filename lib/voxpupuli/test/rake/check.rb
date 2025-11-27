@@ -79,7 +79,7 @@ namespace :check do
           errors << "#{filename} can't be parsed as UTF-8"
         elsif data.bytes[0..2] == [0xef, 0xbb, 0xbf]
           errors << "#{filename} contains BOM"
-        elsif data.include? "\x00" # UTF-16 is technically valid UTF-8, but contains null-bytes
+        elsif data.include? "\x00" # UTF-16 without BOM is technically valid UTF-8, but contains null-bytes
           errors << "#{filename} contains null bytes"
         end
       end
