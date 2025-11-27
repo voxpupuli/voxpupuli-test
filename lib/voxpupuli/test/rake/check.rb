@@ -49,6 +49,20 @@ namespace :check do
       exit 1
     end
   end
+
+  desc 'Check that no misplaced files exist in module code/data'
+  task :misplaced_files do
+    misplaced = []
+    misplaced += Dir['data/**/*'].reject { |fn| !File.file?(fn) || fn.end_with?('.yaml') || fn.end_with?('.yml') }
+    misplaced += Dir['lib/**/*'].reject { |fn| !File.file?(fn) || fn.end_with?('.rb') }
+    misplaced += Dir['{functions,manifests,types}/**/*'].reject { |fn| !File.file?(fn) || fn.end_with?('.pp') }
+    misplaced += Dir['templates/**/*'].reject { |fn| !File.file?(fn) || fn.end_with?('.epp') || fn.end_with?('.erb') }
+
+    if misplaced.any?
+      misplaced.each { |filename| puts "#{filename} is misplaced"}
+      exit 1
+    end
+  end
 end
 
 desc 'Run static pre release checks'
