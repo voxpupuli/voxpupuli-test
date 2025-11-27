@@ -83,7 +83,7 @@ namespace :check do
         end
       end
     rescue StandardError => e
-      errors << "#{filename} failed - #{e.class} #{e}"
+      errors << "#{filename} failed to parse, #{e.class}: #{e}"
     end
 
     if errors.any?
