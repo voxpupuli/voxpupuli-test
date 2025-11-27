@@ -59,7 +59,7 @@ namespace :check do
     misplaced += Dir['templates/**/*'].reject { |fn| !File.file?(fn) || fn.end_with?('.epp') || fn.end_with?('.erb') }
 
     if misplaced.any?
-      misplaced.each { |filename| puts "#{filename} is misplaced"}
+      misplaced.each { |filename| puts "#{filename} is misplaced" }
       exit 1
     end
   end
@@ -83,8 +83,8 @@ namespace :check do
           errors << "#{filename} contains null bytes"
         end
       end
-    rescue StandardError => ex
-      errors << "#{filename} failed - #{ex.class} #{ex}"
+    rescue StandardError => e
+      errors << "#{filename} failed - #{e.class} #{e}"
     end
 
     if errors.any?
