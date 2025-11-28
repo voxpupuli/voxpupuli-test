@@ -80,6 +80,8 @@ namespace :check do
           errors << "#{filename} contains BOM"
         elsif data.include? "\x00" # UTF-16 without BOM is technically valid UTF-8, but contains null-bytes
           errors << "#{filename} contains null bytes"
+        elsif !file.eof?
+          redo
         end
       end
     rescue StandardError => e
