@@ -49,6 +49,50 @@ namespace :check do
       exit 1
     end
   end
+
+  desc 'Check that no misplaced files exist in module code/data'
+  task :misplaced_files do
+    misplaced = []
+    misplaced += Dir['data/**/*'].reject { |fn| !File.file?(fn) || fn.end_with?('.yaml') || fn.end_with?('.yml') }
+    misplaced += Dir['lib/**/*'].reject { |fn| !File.file?(fn) || fn.end_with?('.rb') }
+    misplaced += Dir['{functions,manifests,types}/**/*'].reject { |fn| !File.file?(fn) || fn.end_with?('.pp') }
+    misplaced += Dir['templates/**/*'].reject { |fn| !File.file?(fn) || fn.end_with?('.epp') || fn.end_with?('.erb') }
+
+    if misplaced.any?
+      misplaced.each { |filename| puts "#{filename} is misplaced" }
+      exit 1
+    end
+  end
+
+  desc 'Check that all module code and data are valid UTF-8 without BOM'
+  task :utf8 do
+    errors = []
+
+    Dir['{data,functions,lib,manifests,templates,types}/**/*'].each do |filename|
+      next unless File.file? filename
+
+      File.open(filename, 'r:utf-8') do |file|
+        data = file.readline
+
+        if !data.valid_encoding?
+          errors << "#{filename} can't be parsed as UTF-8"
+        elsif data.bytes[0..2] == [0xef, 0xbb, 0xbf]
+          errors << "#{filename} contains BOM"
+        elsif data.include? "\x00" # UTF-16 without BOM is technically valid UTF-8, but contains null-bytes
+          errors << "#{filename} contains null bytes"
+        elsif !file.eof?
+          redo
+        end
+      end
+    rescue StandardError => e
+      errors << "#{filename} failed to parse, #{e.class}: #{e}"
+    end
+
+    if errors.any?
+      errors.each { |error| puts error }
+      exit 1
+    end
+  end
 end
 
 desc 'Run static pre release checks'
