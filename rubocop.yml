@@ -1,12 +1,12 @@
 # This is a shared config for easy consumption in other modules, without having
 # to sync over a large file
-require:
+plugins:
   - rubocop-rspec
   - rubocop-rake
 
 AllCops:
-  # Puppetserver 7 uses Jruby 9.3 which is compatible to C Ruby 2.6
-  TargetRubyVersion: 2.6
+  # OpenVox Server 8 uses JRuby 9.4 which is compatible to MRI Ruby 3.1
+  TargetRubyVersion: 3.1
   DisplayCopNames: true
   ExtraDetails: true
   DisplayStyleGuide: true
@@ -445,9 +445,12 @@ Style/PercentLiteralDelimiters:
 Style/PerlBackrefs:
   Enabled: True
 
-Naming/PredicateName:
+Naming/PredicatePrefix:
   Enabled: True
   AllowedMethods: ['is_a?', 'is_to_s']
+
+Naming/PredicateMethod:
+  Enabled: false
 
 Style/RedundantException:
   Enabled: True
@@ -557,7 +560,12 @@ Style/FormatStringToken:
 
 # This is useful, but sometimes a little too picky about where unit tests files
 # are located.
-RSpec/FilePath:
+
+# old cop: RSpec/FilePath
+RSpec/SpecFilePathFormat:
+  Enabled: false
+
+RSpec/SpecFilePathSuffix:
   Enabled: false
 
 # Leaving these enabled creates too much busy work
@@ -661,8 +669,6 @@ RSpec/ExcessiveDocstringSpacing: # new in 2.5
 RSpec/IdenticalEqualityAssertion: # new in 2.4
   Enabled: true
 RSpec/SubjectDeclaration: # new in 2.5
-  Enabled: true
-RSpec/Rails/AvoidSetupHook: # new in 2.4
   Enabled: true
 RSpec/ImplicitSubject:
   Enabled: false
