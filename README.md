@@ -84,6 +84,19 @@ It has an exclude pattern for: `%r{^((modules|acceptance|\.?vendor|spec/fixtures
 We recommend using the GitHub style guide for markdown files, which includes no trailing whitespace.
 See [GitHub Markdown Style Guide](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
+### `check:misplaced_files`
+
+The rake task `check:misplaced_files` checks for misplaced files in the repository.
+
+Files are considered misplaced if they don't belong in the directory tree they are under.
+I.e. `functions/`, `manifests/`, and `types/` may only contain `.pp` files, `templates/` may only contain `.erb` and `.epp`, `data/` may only contain `.yml` and `.yaml`, and `lib/` may only contain `.rb`.
+
+### `check:utf8`
+
+The rake task `check:utf8` checks that all files that will be parsed by Puppet are encoded in valid UTF-8 without a BOM.
+
+The task validates all files under `data/`, `functions/`, `lib/`, `manifests/`, `templates/`, and `types/`.
+
 ## Fact handling
 
 The recommended method is using [rspec-puppet-facts](https://github.com/mcanevet/rspec-puppet-facts) and is set up by default. This means the tests are writting as follows:
