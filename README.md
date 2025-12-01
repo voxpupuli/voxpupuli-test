@@ -97,6 +97,16 @@ The rake task `check:utf8` checks that all files that will be parsed by Puppet a
 
 The task validates all files under `data/`, `functions/`, `lib/`, `manifests/`, `templates/`, and `types/`.
 
+## Environment variables
+
+### `CODECLIMATE_REPORT_FILE`
+
+Setting `CODECLIMATE_REPORT_FILE` to a file path will configure tasks that support it to output CodeClimate-style JSON reports into the given file.
+
+The tasks that currently support this feature include `lint` and `rubocop`.
+
+Note that if multiple tasks all attempt to output CodeClimate reports in a single rake call, then only the final task will be able store its report.
+
 ## Fact handling
 
 The recommended method is using [rspec-puppet-facts](https://github.com/mcanevet/rspec-puppet-facts) and is set up by default. This means the tests are writting as follows:
