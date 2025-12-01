@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v13.2.0](https://github.com/voxpupuli/voxpupuli-test/tree/v13.2.0) (2025-12-01)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v13.1.0...v13.2.0)
+
+**Implemented enhancements:**
+
+- Add simple Code Climate JSON formatter for RuboCop [\#202](https://github.com/voxpupuli/voxpupuli-test/pull/202) ([ananace](https://github.com/ananace))
+- Add additional file checks [\#201](https://github.com/voxpupuli/voxpupuli-test/pull/201) ([ananace](https://github.com/ananace))
+
 ## [v13.1.0](https://github.com/voxpupuli/voxpupuli-test/tree/v13.1.0) (2025-10-02)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v13.0.0...v13.1.0)
