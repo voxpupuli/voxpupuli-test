@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
 
   s.files       = Dir['lib/**/*.rb', 'rubocop.yml', 'LICENSE', 'README.md']
 
-  s.required_ruby_version = '>= 2.7.0'
+  s.required_ruby_version = '>= 3.2.0'
 
   s.add_runtime_dependency 'rake', '~> 13.0', '>= 13.0.6'
 

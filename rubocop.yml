@@ -5,8 +5,8 @@ require:
   - rubocop-rake
 
 AllCops:
-  # Puppetserver 7 uses Jruby 9.3 which is compatible to C Ruby 2.6
-  TargetRubyVersion: 2.6
+  # OpenVox Server 8 uses JRuby 9.4 which is compatible to MRI Ruby 3.1
+  TargetRubyVersion: 3.1
   DisplayCopNames: true
   ExtraDetails: true
   DisplayStyleGuide: true
