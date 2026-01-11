@@ -2,13 +2,16 @@
 
 require 'metadata-json-lint/rake_task'
 require 'openvox-strings/tasks'
-require 'rake' # provides `sh` method
 
 namespace :validate do
   desc 'Validate all .rb files'
   task :ruby do
     Dir['lib/**/*.rb', 'tasks/**/*.rb'].each do |lib_file|
-      sh 'ruby', '-c', lib_file
+      RubyVM::InstructionSequence.compile_file(lib_file)
+      puts "#{lib_file} syntax OK"
+      true
+    rescue SyntaxError => e
+      puts e.message
     end
   end
 
