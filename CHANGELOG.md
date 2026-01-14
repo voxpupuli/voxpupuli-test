@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v14.0.0](https://github.com/voxpupuli/voxpupuli-test/tree/v14.0.0) (2026-01-14)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v13.2.0...v14.0.0)
+
+**Breaking changes:**
+
+- feat: switch Layout/DotPosition to 'leading' [\#172](https://github.com/voxpupuli/voxpupuli-test/pull/172) ([jay7x](https://github.com/jay7x))
+
 ## [v13.2.0](https://github.com/voxpupuli/voxpupuli-test/tree/v13.2.0) (2025-12-01)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v13.1.0...v13.2.0)
