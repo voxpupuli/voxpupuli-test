@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v14.0.0](https://github.com/voxpupuli/voxpupuli-test/tree/v14.0.0) (2026-03-06)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v13.2.0...v14.0.0)
+
+**Breaking changes:**
+
+- rubocop: change Style/TernaryParentheses [\#216](https://github.com/voxpupuli/voxpupuli-test/pull/216) ([bastelfreak](https://github.com/bastelfreak))
+- Rubocop: Style/TrailingComma: Sync with voxpupuil-rubocop [\#215](https://github.com/voxpupuli/voxpupuli-test/pull/215) ([bastelfreak](https://github.com/bastelfreak))
+- feat: require rubocop 1.81.7 [\#205](https://github.com/voxpupuli/voxpupuli-test/pull/205) ([rwaffen](https://github.com/rwaffen))
+- feat: switch Layout/DotPosition to 'leading' [\#172](https://github.com/voxpupuli/voxpupuli-test/pull/172) ([jay7x](https://github.com/jay7x))
+
+**Implemented enhancements:**
+
+- build\(deps\): update openvox-strings requirement from \>= 5.0, \< 7 to \>= 5.0, \< 8 [\#212](https://github.com/voxpupuli/voxpupuli-test/pull/212) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v13.2.0](https://github.com/voxpupuli/voxpupuli-test/tree/v13.2.0) (2025-12-01)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v13.1.0...v13.2.0)
