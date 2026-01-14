@@ -32,11 +32,10 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'syslog', '~> 0.3.0'
 
   # Rubocop
-  # newest versions that still support Ruby 2.6
-  # jruby 9.3 in Puppetserver 7 is compatible with C Ruby 2.6
-  s.add_runtime_dependency 'rubocop', '~> 1.50.0'
-  s.add_runtime_dependency 'rubocop-rake', '~> 0.6.0'
-  s.add_runtime_dependency 'rubocop-rspec', '~> 2.20.0'
+  # has to be compatible with MRI Ruby 3.1 due to OpenVox server using Jruby
+  s.add_runtime_dependency 'rubocop', '~> 1.81.7'
+  s.add_runtime_dependency 'rubocop-rake', '~> 0.7.1'
+  s.add_runtime_dependency 'rubocop-rspec', '~> 3.8.0'
 
   # Linting
   # meta gem to pull in all puppet-lint plugins + puppet-lint itself
