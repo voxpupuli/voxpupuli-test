@@ -29,7 +29,7 @@ Gem::Specification.new do |s|
   # openvox gem depends on syslog, but doesn't list it as explicit dependency
   # until Ruby 3.4, syslog was part of MRI ruby core
   # https://github.com/OpenVoxProject/puppet/issues/90
-  s.add_runtime_dependency 'syslog', '~> 0.3.0'
+  s.add_runtime_dependency 'syslog', '>= 0.3', '< 0.5'
 
   # Rubocop
   # newest versions that still support Ruby 2.6
