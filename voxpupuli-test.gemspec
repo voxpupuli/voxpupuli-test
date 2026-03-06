@@ -14,32 +14,32 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = '>= 2.7.0'
 
-  s.add_runtime_dependency 'rake', '~> 13.0', '>= 13.0.6'
+  s.add_dependency 'rake', '~> 13.0', '>= 13.0.6'
 
   # Testing
-  s.add_runtime_dependency 'facterdb', '>= 3.1', '< 5.0'
-  s.add_runtime_dependency 'metadata-json-lint', '>= 4.0', '< 6'
-  s.add_runtime_dependency 'openvox-strings', '>= 5.0', '< 8'
-  s.add_runtime_dependency 'parallel_tests', '>= 4.2', '< 6'
-  s.add_runtime_dependency 'puppet_fixtures', '>= 0.1', '< 3'
-  s.add_runtime_dependency 'puppet-syntax', '>= 6.0', '< 8'
-  s.add_runtime_dependency 'rspec-github', '>= 2.0', '< 4'
-  s.add_runtime_dependency 'rspec-puppet', '~> 5.0'
-  s.add_runtime_dependency 'rspec-puppet-facts', '>= 5.4', '< 7'
+  s.add_dependency 'facterdb', '>= 3.1', '< 5.0'
+  s.add_dependency 'metadata-json-lint', '>= 4.0', '< 6'
+  s.add_dependency 'openvox-strings', '>= 5.0', '< 8'
+  s.add_dependency 'parallel_tests', '>= 4.2', '< 6'
+  s.add_dependency 'puppet_fixtures', '>= 0.1', '< 3'
+  s.add_dependency 'puppet-syntax', '>= 6.0', '< 8'
+  s.add_dependency 'rspec-github', '>= 2.0', '< 4'
+  s.add_dependency 'rspec-puppet', '~> 5.0'
+  s.add_dependency 'rspec-puppet-facts', '>= 5.4', '< 7'
   # openvox gem depends on syslog, but doesn't list it as explicit dependency
   # until Ruby 3.4, syslog was part of MRI ruby core
   # https://github.com/OpenVoxProject/puppet/issues/90
-  s.add_runtime_dependency 'syslog', '>= 0.3', '< 0.5'
+  s.add_dependency 'syslog', '>= 0.3', '< 0.5'
 
   # Rubocop
   # has to be compatible with MRI Ruby 3.1 due to OpenVox server 8 using Jruby 9.4
-  s.add_runtime_dependency 'rubocop', '~> 1.85.1'
-  s.add_runtime_dependency 'rubocop-rake', '~> 0.7.1'
-  s.add_runtime_dependency 'rubocop-rspec', '~> 3.9.0'
+  s.add_dependency 'rubocop', '~> 1.85.1'
+  s.add_dependency 'rubocop-rake', '~> 0.7.1'
+  s.add_dependency 'rubocop-rspec', '~> 3.9.0'
 
   # Linting
   # meta gem to pull in all puppet-lint plugins + puppet-lint itself
-  s.add_runtime_dependency 'voxpupuli-puppet-lint-plugins', '>= 6.0', '< 8'
+  s.add_dependency 'voxpupuli-puppet-lint-plugins', '>= 6.0', '< 8'
 
   # development
   s.add_development_dependency 'rspec', '~> 3.12'
