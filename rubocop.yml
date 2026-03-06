@@ -333,12 +333,14 @@ Style/StringLiterals:
 
 Style/TrailingCommaInArguments:
   Enabled: True
+  EnforcedStyleForMultiline: comma
 
 Style/TrailingCommaInArrayLiteral:
-  Enabled: False
+  Enabled: True
+  EnforcedStyleForMultiline: consistent_comma
 
 Style/TrailingCommaInHashLiteral:
-  Enabled: False
+  EnforcedStyleForMultiline: consistent_comma
 
 Style/GlobalVars:
   Enabled: True
