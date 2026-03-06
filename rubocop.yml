@@ -499,6 +499,9 @@ Style/Encoding:
 Style/BlockDelimiters:
   Enabled: True
 
+Style/TernaryParentheses:
+  EnforcedStyle: require_parentheses_when_complex
+
 Layout/MultilineBlockLayout:
   Enabled: True
 
