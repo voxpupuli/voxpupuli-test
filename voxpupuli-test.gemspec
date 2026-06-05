@@ -35,7 +35,7 @@ Gem::Specification.new do |s|
   # has to be compatible with MRI Ruby 3.1 due to OpenVox server 8 using Jruby 9.4
   s.add_dependency 'rubocop', '~> 1.85.1'
   s.add_dependency 'rubocop-rake', '~> 0.7.1'
-  s.add_dependency 'rubocop-rspec', '~> 3.9.0'
+  s.add_dependency 'rubocop-rspec', '>= 3.9', '< 3.11'
 
   # Linting
   # meta gem to pull in all puppet-lint plugins + puppet-lint itself
