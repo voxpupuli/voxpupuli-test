@@ -113,6 +113,21 @@ The tasks that currently support this feature include `lint` and `rubocop`.
 
 Note that if multiple tasks all attempt to output CodeClimate reports in a single rake call, then only the final task will be able store its report.
 
+## Shared examples
+
+Shared examples are provided for things that are easy to get wrong in a custom type or provider.
+They are opt-in, so add the ones that apply to your type:
+
+```ruby
+require 'spec_helper'
+
+describe Puppet::Type.type(:mytool_config) do
+  it_behaves_like 'a type that works with `puppet generate types`'
+end
+```
+
+See [`lib/voxpupuli/test/shared_examples/`](lib/voxpupuli/test/shared_examples) for what is available.
+
 ## Fact handling
 
 The recommended method is using [rspec-puppet-facts](https://github.com/mcanevet/rspec-puppet-facts) and is set up by default. This means the tests are writting as follows:

@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'voxpupuli/test/facts'
+require 'voxpupuli/test/shared_examples'
 require 'rspec-puppet'
 
 spec_path = File.expand_path(File.join(Dir.pwd, 'spec'))
