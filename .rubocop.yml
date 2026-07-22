@@ -41,4 +41,8 @@ Style/IfUnlessModifier:
 Metrics/BlockLength:
   Enabled: false
 
+RSpec/SpecFilePathFormat:
+  Exclude:
+    - spec/shared_examples/*_spec.rb
+
 inherit_from: .rubocop_todo.yml
