@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v15.0.0](https://github.com/voxpupuli/voxpupuli-test/tree/v15.0.0) (2026-10-03)
+
+[Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v14.0.0...v15.0.0)
+
+**Breaking changes:**
+
+- feat: require rubocop 1.91 [\#229](https://github.com/voxpupuli/voxpupuli-test/pull/229) ([silug](https://github.com/silug))
+
+**Implemented enhancements:**
+
+- Add shared examples for custom types and providers [\#227](https://github.com/voxpupuli/voxpupuli-test/pull/227) ([alexjfisher](https://github.com/alexjfisher))
+- feat: add rubocop:regenerate\_todo task [\#226](https://github.com/voxpupuli/voxpupuli-test/pull/226) ([rwaffen](https://github.com/rwaffen))
+
+**Merged pull requests:**
+
+- ci: test with OpenVox 9.0 [\#230](https://github.com/voxpupuli/voxpupuli-test/pull/230) ([silug](https://github.com/silug))
+- build\(deps\): update rspec-puppet requirement from ~\> 5.0 to \>= 5, \< 7 [\#228](https://github.com/voxpupuli/voxpupuli-test/pull/228) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps\): update rubocop-rspec requirement from ~\> 3.9.0 to \>= 3.9, \< 3.11 [\#223](https://github.com/voxpupuli/voxpupuli-test/pull/223) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps-dev\): update github\_changelog\_generator requirement from ~\> 1.17.0 to ~\> 1.18.0 [\#220](https://github.com/voxpupuli/voxpupuli-test/pull/220) ([dependabot[bot]](https://github.com/apps/dependabot))
+- build\(deps-dev\): update github\_changelog\_generator requirement from ~\> 1.16.4 to ~\> 1.17.0 [\#219](https://github.com/voxpupuli/voxpupuli-test/pull/219) ([dependabot[bot]](https://github.com/apps/dependabot))
+
 ## [v14.0.0](https://github.com/voxpupuli/voxpupuli-test/tree/v14.0.0) (2026-03-06)
 
 [Full Changelog](https://github.com/voxpupuli/voxpupuli-test/compare/v13.2.0...v14.0.0)
