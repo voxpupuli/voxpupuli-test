@@ -36,11 +36,18 @@ jobs:
         ruby: ${{ fromJSON(needs.rubocop_and_matrix.outputs.ruby) }}
         openvox:
           - "~> 8.0"
+          - "~> 9.0"
         exclude:
           - ruby: "3.0"
             openvox: "~> 8.0"
           - ruby: "2.7"
             openvox: "~> 8.0"
+          - ruby: "3.1"
+            openvox: "~> 9.0"
+          - ruby: "3.0"
+            openvox: "~> 9.0"
+          - ruby: "2.7"
+            openvox: "~> 9.0"
     name: "Ruby ${{ matrix.ruby }} - OpenVox ${{ matrix.openvox }}"
     env:
       OPENVOX_VERSION: ${{ matrix.openvox }}
