@@ -113,6 +113,10 @@ The tasks that currently support this feature include `lint` and `rubocop`.
 
 Note that if multiple tasks all attempt to output CodeClimate reports in a single rake call, then only the final task will be able store its report.
 
+### `DISABLE_COVERAGE`
+
+Setting `DISABLE_COVERAGE` environment variable to any value prevents coverage check and report from being executed at the end of the test suite.
+
 ## Shared examples
 
 Shared examples are provided for things that are easy to get wrong in a custom type or provider.
