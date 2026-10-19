@@ -39,8 +39,10 @@ RSpec.configure do |config|
     end
   end
 
-  config.after(:suite) do
-    RSpec::Puppet::Coverage.report!
+  unless ENV['DISABLE_COVERAGE']
+    config.after(:suite) do
+      RSpec::Puppet::Coverage.report!
+    end
   end
 end
 
