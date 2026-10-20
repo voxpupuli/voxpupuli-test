@@ -12,6 +12,24 @@ namespace :validate do
     end
   end
 
+  desc 'Validate all YAML files'
+  task :yaml do
+    failures = []
+    Dir['data/**/*.{yml,yaml}', 'hiera.yaml'].each do |yaml_file|
+      YAML.safe_load(File.read(yaml_file), permitted_classes: [Symbol], permitted_symbols: [], aliases: true)
+    rescue Psych::DisallowedClass, Psych::SyntaxError => e
+      failures << "#{yaml_file}: #{e}"
+    rescue StandardError => e
+      failures << "#{yaml_file}: #{e.class}: #{e}"
+    end
+
+    if failures.any?
+      puts 'Some YAML files failed to validate;'
+      failures.each { |fail| puts "- #{fail}" }
+      exit 1
+    end
+  end
+
   desc 'validate REFERENCE.md if it exists'
   task :strings do
     if File.exist?('REFERENCE.md')
